@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/app/policy/config.proto',
   package='v2ray.core.app.policy',
   syntax='proto3',
-  serialized_pb=_b('\n&v2ray.com/core/app/policy/config.proto\x12\x15v2ray.core.app.policy\"\x17\n\x06Second\x12\r\n\x05value\x18\x01 \x01(\r\"\x89\x03\n\x06Policy\x12\x36\n\x07timeout\x18\x01 \x01(\x0b\x32%.v2ray.core.app.policy.Policy.Timeout\x12\x32\n\x05stats\x18\x02 \x01(\x0b\x32#.v2ray.core.app.policy.Policy.Stats\x1a\xdd\x01\n\x07Timeout\x12\x30\n\thandshake\x18\x01 \x01(\x0b\x32\x1d.v2ray.core.app.policy.Second\x12\x36\n\x0f\x63onnection_idle\x18\x02 \x01(\x0b\x32\x1d.v2ray.core.app.policy.Second\x12\x32\n\x0buplink_only\x18\x03 \x01(\x0b\x32\x1d.v2ray.core.app.policy.Second\x12\x34\n\rdownlink_only\x18\x04 \x01(\x0b\x32\x1d.v2ray.core.app.policy.Second\x1a\x33\n\x05Stats\x12\x13\n\x0buser_uplink\x18\x01 \x01(\x08\x12\x15\n\ruser_downlink\x18\x02 \x01(\x08\"\x83\x01\n\x0cSystemPolicy\x12\x38\n\x05stats\x18\x01 \x01(\x0b\x32).v2ray.core.app.policy.SystemPolicy.Stats\x1a\x39\n\x05Stats\x12\x16\n\x0einbound_uplink\x18\x01 \x01(\x08\x12\x18\n\x10inbound_downlink\x18\x02 \x01(\x08\"\xc3\x01\n\x06\x43onfig\x12\x37\n\x05level\x18\x01 \x03(\x0b\x32(.v2ray.core.app.policy.Config.LevelEntry\x12\x33\n\x06system\x18\x02 \x01(\x0b\x32#.v2ray.core.app.policy.SystemPolicy\x1aK\n\nLevelEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12,\n\x05value\x18\x02 \x01(\x0b\x32\x1d.v2ray.core.app.policy.Policy:\x02\x38\x01\x42=\n\x19\x63om.v2ray.core.app.policyP\x01Z\x06policy\xaa\x02\x15V2Ray.Core.App.Policyb\x06proto3')
+  serialized_pb=_b('\n&v2ray.com/core/app/policy/config.proto\x12\x15v2ray.core.app.policy\"\x17\n\x06Second\x12\r\n\x05value\x18\x01 \x01(\r\"\xdd\x03\n\x06Policy\x12\x36\n\x07timeout\x18\x01 \x01(\x0b\x32%.v2ray.core.app.policy.Policy.Timeout\x12\x32\n\x05stats\x18\x02 \x01(\x0b\x32#.v2ray.core.app.policy.Policy.Stats\x12\x34\n\x06\x62uffer\x18\x03 \x01(\x0b\x32$.v2ray.core.app.policy.Policy.Buffer\x1a\xdd\x01\n\x07Timeout\x12\x30\n\thandshake\x18\x01 \x01(\x0b\x32\x1d.v2ray.core.app.policy.Second\x12\x36\n\x0f\x63onnection_idle\x18\x02 \x01(\x0b\x32\x1d.v2ray.core.app.policy.Second\x12\x32\n\x0buplink_only\x18\x03 \x01(\x0b\x32\x1d.v2ray.core.app.policy.Second\x12\x34\n\rdownlink_only\x18\x04 \x01(\x0b\x32\x1d.v2ray.core.app.policy.Second\x1a\x33\n\x05Stats\x12\x13\n\x0buser_uplink\x18\x01 \x01(\x08\x12\x15\n\ruser_downlink\x18\x02 \x01(\x08\x1a\x1c\n\x06\x42uffer\x12\x12\n\nconnection\x18\x01 \x01(\x05\"\x83\x01\n\x0cSystemPolicy\x12\x38\n\x05stats\x18\x01 \x01(\x0b\x32).v2ray.core.app.policy.SystemPolicy.Stats\x1a\x39\n\x05Stats\x12\x16\n\x0einbound_uplink\x18\x01 \x01(\x08\x12\x18\n\x10inbound_downlink\x18\x02 \x01(\x08\"\xc3\x01\n\x06\x43onfig\x12\x37\n\x05level\x18\x01 \x03(\x0b\x32(.v2ray.core.app.policy.Config.LevelEntry\x12\x33\n\x06system\x18\x02 \x01(\x0b\x32#.v2ray.core.app.policy.SystemPolicy\x1aK\n\nLevelEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12,\n\x05value\x18\x02 \x01(\x0b\x32\x1d.v2ray.core.app.policy.Policy:\x02\x38\x01\x42=\n\x19\x63om.v2ray.core.app.policyP\x01Z\x06policy\xaa\x02\x15V2Ray.Core.App.Policyb\x06proto3')
 )
 
 
@@ -103,8 +103,8 @@ _POLICY_TIMEOUT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=210,
-  serialized_end=431,
+  serialized_start=264,
+  serialized_end=485,
 )
 
 _POLICY_STATS = _descriptor.Descriptor(
@@ -140,8 +140,38 @@ _POLICY_STATS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=433,
-  serialized_end=484,
+  serialized_start=487,
+  serialized_end=538,
+)
+
+_POLICY_BUFFER = _descriptor.Descriptor(
+  name='Buffer',
+  full_name='v2ray.core.app.policy.Policy.Buffer',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='connection', full_name='v2ray.core.app.policy.Policy.Buffer.connection', index=0,
+      number=1, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=540,
+  serialized_end=568,
 )
 
 _POLICY = _descriptor.Descriptor(
@@ -165,10 +195,17 @@ _POLICY = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='buffer', full_name='v2ray.core.app.policy.Policy.buffer', index=2,
+      number=3, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
-  nested_types=[_POLICY_TIMEOUT, _POLICY_STATS, ],
+  nested_types=[_POLICY_TIMEOUT, _POLICY_STATS, _POLICY_BUFFER, ],
   enum_types=[
   ],
   options=None,
@@ -178,7 +215,7 @@ _POLICY = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=91,
-  serialized_end=484,
+  serialized_end=568,
 )
 
 
@@ -215,8 +252,8 @@ _SYSTEMPOLICY_STATS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=561,
-  serialized_end=618,
+  serialized_start=645,
+  serialized_end=702,
 )
 
 _SYSTEMPOLICY = _descriptor.Descriptor(
@@ -245,8 +282,8 @@ _SYSTEMPOLICY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=487,
-  serialized_end=618,
+  serialized_start=571,
+  serialized_end=702,
 )
 
 
@@ -283,8 +320,8 @@ _CONFIG_LEVELENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=741,
-  serialized_end=816,
+  serialized_start=825,
+  serialized_end=900,
 )
 
 _CONFIG = _descriptor.Descriptor(
@@ -320,8 +357,8 @@ _CONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=621,
-  serialized_end=816,
+  serialized_start=705,
+  serialized_end=900,
 )
 
 _POLICY_TIMEOUT.fields_by_name['handshake'].message_type = _SECOND
@@ -330,8 +367,10 @@ _POLICY_TIMEOUT.fields_by_name['uplink_only'].message_type = _SECOND
 _POLICY_TIMEOUT.fields_by_name['downlink_only'].message_type = _SECOND
 _POLICY_TIMEOUT.containing_type = _POLICY
 _POLICY_STATS.containing_type = _POLICY
+_POLICY_BUFFER.containing_type = _POLICY
 _POLICY.fields_by_name['timeout'].message_type = _POLICY_TIMEOUT
 _POLICY.fields_by_name['stats'].message_type = _POLICY_STATS
+_POLICY.fields_by_name['buffer'].message_type = _POLICY_BUFFER
 _SYSTEMPOLICY_STATS.containing_type = _SYSTEMPOLICY
 _SYSTEMPOLICY.fields_by_name['stats'].message_type = _SYSTEMPOLICY_STATS
 _CONFIG_LEVELENTRY.fields_by_name['value'].message_type = _POLICY
@@ -366,6 +405,13 @@ Policy = _reflection.GeneratedProtocolMessageType('Policy', (_message.Message,),
     # @@protoc_insertion_point(class_scope:v2ray.core.app.policy.Policy.Stats)
     ))
   ,
+
+  Buffer = _reflection.GeneratedProtocolMessageType('Buffer', (_message.Message,), dict(
+    DESCRIPTOR = _POLICY_BUFFER,
+    __module__ = 'v2ray.com.core.app.policy.config_pb2'
+    # @@protoc_insertion_point(class_scope:v2ray.core.app.policy.Policy.Buffer)
+    ))
+  ,
   DESCRIPTOR = _POLICY,
   __module__ = 'v2ray.com.core.app.policy.config_pb2'
   # @@protoc_insertion_point(class_scope:v2ray.core.app.policy.Policy)
@@ -373,6 +419,7 @@ Policy = _reflection.GeneratedProtocolMessageType('Policy', (_message.Message,),
 _sym_db.RegisterMessage(Policy)
 _sym_db.RegisterMessage(Policy.Timeout)
 _sym_db.RegisterMessage(Policy.Stats)
+_sym_db.RegisterMessage(Policy.Buffer)
 
 SystemPolicy = _reflection.GeneratedProtocolMessageType('SystemPolicy', (_message.Message,), dict(
 
