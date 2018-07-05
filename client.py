@@ -8,11 +8,11 @@ import uuid
 import grpc
 
 INBOUND_TAG = 'master_server'
-SERVER_PORT = '10202'
-SERVER_ADDRESS = '102.182.109.139'
+SERVER_PORT = '30202'
+SERVER_ADDRESS = '244.202.112.202'
 
 
-def add_user(uuid, email, level=0, alter_id=10):
+def add_user(uuid, email, level=0, alter_id=32):
     channel = grpc.insecure_channel('%s:%s' % (SERVER_ADDRESS, SERVER_PORT))
     stub = command_pb2_grpc.HandlerServiceStub(channel)
 
@@ -42,17 +42,20 @@ def add_user(uuid, email, level=0, alter_id=10):
 
 
 if __name__ == '__main__':
-    uid = uuid.uuid4().hex
-    email = uid + '@email.com'
-    add_user(uid, email)
+    l = []
+    for i in range(5):
+        uid = uuid.uuid4().hex
+        email = str(i) + 'tyf@email.com'
+        add_user(uid, email)
 
-    data = {}
-    data['id'] = uid
-    data['email'] = email
-    data['level'] = 0
-    data['alterId'] = 10
+        data = {}
+        data['id'] = uid
+        data['email'] = email
+        data['level'] = 0
+        data['alterId'] = 32
+        l.append(data)
 
-    file = open(uid + '.json', encoding='utf-8', mode='w')
-    file.write(json.dumps(data, indent=4))
+    file = open('tyf' + '.json', encoding='utf-8', mode='w')
+    file.write(json.dumps(l, indent=4))
 
-    print(json.dumps(data, indent=4))
+    print(json.dumps(l, indent=4))
