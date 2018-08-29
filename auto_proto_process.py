@@ -41,7 +41,7 @@ else:
     cf.add_section('CONFIG')
 
 data = requests.get('https://github.com/v2ray/v2ray-core/releases/latest')
-soup = BeautifulSoup(data.text)
+soup = BeautifulSoup(data.text, "html.parser")
 latest_version = soup.find('span', {'class': 'css-truncate-target'}).text
 
 if is_version_higher(latest_version, local_tag):

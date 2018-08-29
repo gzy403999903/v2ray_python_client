@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/transport/internet/config.proto',
   package='v2ray.core.transport.internet',
   syntax='proto3',
-  serialized_pb=_b('\n.v2ray.com/core/transport/internet/config.proto\x12\x1dv2ray.core.transport.internet\x1a\x30v2ray.com/core/common/serial/typed_message.proto\"\x8f\x01\n\x0fTransportConfig\x12\x42\n\x08protocol\x18\x01 \x01(\x0e\x32\x30.v2ray.core.transport.internet.TransportProtocol\x12\x38\n\x08settings\x18\x02 \x01(\x0b\x32&.v2ray.core.common.serial.TypedMessage\"\xf8\x01\n\x0cStreamConfig\x12\x42\n\x08protocol\x18\x01 \x01(\x0e\x32\x30.v2ray.core.transport.internet.TransportProtocol\x12J\n\x12transport_settings\x18\x02 \x03(\x0b\x32..v2ray.core.transport.internet.TransportConfig\x12\x15\n\rsecurity_type\x18\x03 \x01(\t\x12\x41\n\x11security_settings\x18\x04 \x03(\x0b\x32&.v2ray.core.common.serial.TypedMessage\"\x1a\n\x0bProxyConfig\x12\x0b\n\x03tag\x18\x01 \x01(\t*Z\n\x11TransportProtocol\x12\x07\n\x03TCP\x10\x00\x12\x07\n\x03UDP\x10\x01\x12\x08\n\x04MKCP\x10\x02\x12\r\n\tWebSocket\x10\x03\x12\x08\n\x04HTTP\x10\x04\x12\x10\n\x0c\x44omainSocket\x10\x05\x42O\n!com.v2ray.core.transport.internetP\x01Z\x08internet\xaa\x02\x1dV2Ray.Core.Transport.Internetb\x06proto3')
+  serialized_pb=_b('\n.v2ray.com/core/transport/internet/config.proto\x12\x1dv2ray.core.transport.internet\x1a\x30v2ray.com/core/common/serial/typed_message.proto\"\xa6\x01\n\x0fTransportConfig\x12\x42\n\x08protocol\x18\x01 \x01(\x0e\x32\x30.v2ray.core.transport.internet.TransportProtocol\x12\x15\n\rprotocol_name\x18\x03 \x01(\t\x12\x38\n\x08settings\x18\x02 \x01(\x0b\x32&.v2ray.core.common.serial.TypedMessage\"\x93\x02\n\x0cStreamConfig\x12\x46\n\x08protocol\x18\x01 \x01(\x0e\x32\x30.v2ray.core.transport.internet.TransportProtocolB\x02\x18\x01\x12\x15\n\rprotocol_name\x18\x05 \x01(\t\x12J\n\x12transport_settings\x18\x02 \x03(\x0b\x32..v2ray.core.transport.internet.TransportConfig\x12\x15\n\rsecurity_type\x18\x03 \x01(\t\x12\x41\n\x11security_settings\x18\x04 \x03(\x0b\x32&.v2ray.core.common.serial.TypedMessage\"\x1a\n\x0bProxyConfig\x12\x0b\n\x03tag\x18\x01 \x01(\t*Z\n\x11TransportProtocol\x12\x07\n\x03TCP\x10\x00\x12\x07\n\x03UDP\x10\x01\x12\x08\n\x04MKCP\x10\x02\x12\r\n\tWebSocket\x10\x03\x12\x08\n\x04HTTP\x10\x04\x12\x10\n\x0c\x44omainSocket\x10\x05\x42O\n!com.v2ray.core.transport.internetP\x01Z\x08internet\xaa\x02\x1dV2Ray.Core.Transport.Internetb\x06proto3')
   ,
   dependencies=[v2ray_dot_com_dot_core_dot_common_dot_serial_dot_typed__message__pb2.DESCRIPTOR,])
 
@@ -58,8 +58,8 @@ _TRANSPORTPROTOCOL = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=556,
-  serialized_end=646,
+  serialized_start=606,
+  serialized_end=696,
 )
 _sym_db.RegisterEnumDescriptor(_TRANSPORTPROTOCOL)
 
@@ -88,7 +88,14 @@ _TRANSPORTCONFIG = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='settings', full_name='v2ray.core.transport.internet.TransportConfig.settings', index=1,
+      name='protocol_name', full_name='v2ray.core.transport.internet.TransportConfig.protocol_name', index=1,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='settings', full_name='v2ray.core.transport.internet.TransportConfig.settings', index=2,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -107,7 +114,7 @@ _TRANSPORTCONFIG = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=132,
-  serialized_end=275,
+  serialized_end=298,
 )
 
 
@@ -124,23 +131,30 @@ _STREAMCONFIG = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
+      options=_descriptor._ParseOptions(descriptor_pb2.FieldOptions(), _b('\030\001')), file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='protocol_name', full_name='v2ray.core.transport.internet.StreamConfig.protocol_name', index=1,
+      number=5, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
       options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='transport_settings', full_name='v2ray.core.transport.internet.StreamConfig.transport_settings', index=1,
+      name='transport_settings', full_name='v2ray.core.transport.internet.StreamConfig.transport_settings', index=2,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='security_type', full_name='v2ray.core.transport.internet.StreamConfig.security_type', index=2,
+      name='security_type', full_name='v2ray.core.transport.internet.StreamConfig.security_type', index=3,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='security_settings', full_name='v2ray.core.transport.internet.StreamConfig.security_settings', index=3,
+      name='security_settings', full_name='v2ray.core.transport.internet.StreamConfig.security_settings', index=4,
       number=4, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -158,8 +172,8 @@ _STREAMCONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=278,
-  serialized_end=526,
+  serialized_start=301,
+  serialized_end=576,
 )
 
 
@@ -189,8 +203,8 @@ _PROXYCONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=528,
-  serialized_end=554,
+  serialized_start=578,
+  serialized_end=604,
 )
 
 _TRANSPORTCONFIG.fields_by_name['protocol'].enum_type = _TRANSPORTPROTOCOL
@@ -228,4 +242,6 @@ _sym_db.RegisterMessage(ProxyConfig)
 
 DESCRIPTOR.has_options = True
 DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n!com.v2ray.core.transport.internetP\001Z\010internet\252\002\035V2Ray.Core.Transport.Internet'))
+_STREAMCONFIG.fields_by_name['protocol'].has_options = True
+_STREAMCONFIG.fields_by_name['protocol']._options = _descriptor._ParseOptions(descriptor_pb2.FieldOptions(), _b('\030\001'))
 # @@protoc_insertion_point(module_scope)

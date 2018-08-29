@@ -24,7 +24,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/app/proxyman/config.proto',
   package='v2ray.core.app.proxyman',
   syntax='proto3',
-  serialized_pb=_b('\n(v2ray.com/core/app/proxyman/config.proto\x12\x17v2ray.core.app.proxyman\x1a\'v2ray.com/core/common/net/address.proto\x1a$v2ray.com/core/common/net/port.proto\x1a.v2ray.com/core/transport/internet/config.proto\x1a\x30v2ray.com/core/common/serial/typed_message.proto\"\x0f\n\rInboundConfig\"\x96\x03\n\x12\x41llocationStrategy\x12>\n\x04type\x18\x01 \x01(\x0e\x32\x30.v2ray.core.app.proxyman.AllocationStrategy.Type\x12^\n\x0b\x63oncurrency\x18\x02 \x01(\x0b\x32I.v2ray.core.app.proxyman.AllocationStrategy.AllocationStrategyConcurrency\x12V\n\x07refresh\x18\x03 \x01(\x0b\x32\x45.v2ray.core.app.proxyman.AllocationStrategy.AllocationStrategyRefresh\x1a.\n\x1d\x41llocationStrategyConcurrency\x12\r\n\x05value\x18\x01 \x01(\r\x1a*\n\x19\x41llocationStrategyRefresh\x12\r\n\x05value\x18\x01 \x01(\r\",\n\x04Type\x12\n\n\x06\x41lways\x10\x00\x12\n\n\x06Random\x10\x01\x12\x0c\n\x08\x45xternal\x10\x02\"\xf7\x02\n\x0eReceiverConfig\x12\x34\n\nport_range\x18\x01 \x01(\x0b\x32 .v2ray.core.common.net.PortRange\x12\x31\n\x06listen\x18\x02 \x01(\x0b\x32!.v2ray.core.common.net.IPOrDomain\x12H\n\x13\x61llocation_strategy\x18\x03 \x01(\x0b\x32+.v2ray.core.app.proxyman.AllocationStrategy\x12\x44\n\x0fstream_settings\x18\x04 \x01(\x0b\x32+.v2ray.core.transport.internet.StreamConfig\x12$\n\x1creceive_original_destination\x18\x05 \x01(\x08\x12@\n\x0f\x64omain_override\x18\x07 \x03(\x0e\x32\'.v2ray.core.app.proxyman.KnownProtocolsJ\x04\x08\x06\x10\x07\"\xa6\x01\n\x14InboundHandlerConfig\x12\x0b\n\x03tag\x18\x01 \x01(\t\x12\x41\n\x11receiver_settings\x18\x02 \x01(\x0b\x32&.v2ray.core.common.serial.TypedMessage\x12>\n\x0eproxy_settings\x18\x03 \x01(\x0b\x32&.v2ray.core.common.serial.TypedMessage\"\x10\n\x0eOutboundConfig\"\x91\x02\n\x0cSenderConfig\x12.\n\x03via\x18\x01 \x01(\x0b\x32!.v2ray.core.common.net.IPOrDomain\x12\x44\n\x0fstream_settings\x18\x02 \x01(\x0b\x32+.v2ray.core.transport.internet.StreamConfig\x12\x42\n\x0eproxy_settings\x18\x03 \x01(\x0b\x32*.v2ray.core.transport.internet.ProxyConfig\x12G\n\x12multiplex_settings\x18\x04 \x01(\x0b\x32+.v2ray.core.app.proxyman.MultiplexingConfig\":\n\x12MultiplexingConfig\x12\x0f\n\x07\x65nabled\x18\x01 \x01(\x08\x12\x13\n\x0b\x63oncurrency\x18\x02 \x01(\r*#\n\x0eKnownProtocols\x12\x08\n\x04HTTP\x10\x00\x12\x07\n\x03TLS\x10\x01\x42\x43\n\x1b\x63om.v2ray.core.app.proxymanP\x01Z\x08proxyman\xaa\x02\x17V2Ray.Core.App.Proxymanb\x06proto3')
+  serialized_pb=_b('\n(v2ray.com/core/app/proxyman/config.proto\x12\x17v2ray.core.app.proxyman\x1a\'v2ray.com/core/common/net/address.proto\x1a$v2ray.com/core/common/net/port.proto\x1a.v2ray.com/core/transport/internet/config.proto\x1a\x30v2ray.com/core/common/serial/typed_message.proto\"\x0f\n\rInboundConfig\"\x96\x03\n\x12\x41llocationStrategy\x12>\n\x04type\x18\x01 \x01(\x0e\x32\x30.v2ray.core.app.proxyman.AllocationStrategy.Type\x12^\n\x0b\x63oncurrency\x18\x02 \x01(\x0b\x32I.v2ray.core.app.proxyman.AllocationStrategy.AllocationStrategyConcurrency\x12V\n\x07refresh\x18\x03 \x01(\x0b\x32\x45.v2ray.core.app.proxyman.AllocationStrategy.AllocationStrategyRefresh\x1a.\n\x1d\x41llocationStrategyConcurrency\x12\r\n\x05value\x18\x01 \x01(\r\x1a*\n\x19\x41llocationStrategyRefresh\x12\r\n\x05value\x18\x01 \x01(\r\",\n\x04Type\x12\n\n\x06\x41lways\x10\x00\x12\n\n\x06Random\x10\x01\x12\x0c\n\x08\x45xternal\x10\x02\"?\n\x0eSniffingConfig\x12\x0f\n\x07\x65nabled\x18\x01 \x01(\x08\x12\x1c\n\x14\x64\x65stination_override\x18\x02 \x03(\t\"\xbf\x03\n\x0eReceiverConfig\x12\x34\n\nport_range\x18\x01 \x01(\x0b\x32 .v2ray.core.common.net.PortRange\x12\x31\n\x06listen\x18\x02 \x01(\x0b\x32!.v2ray.core.common.net.IPOrDomain\x12H\n\x13\x61llocation_strategy\x18\x03 \x01(\x0b\x32+.v2ray.core.app.proxyman.AllocationStrategy\x12\x44\n\x0fstream_settings\x18\x04 \x01(\x0b\x32+.v2ray.core.transport.internet.StreamConfig\x12$\n\x1creceive_original_destination\x18\x05 \x01(\x08\x12\x44\n\x0f\x64omain_override\x18\x07 \x03(\x0e\x32\'.v2ray.core.app.proxyman.KnownProtocolsB\x02\x18\x01\x12\x42\n\x11sniffing_settings\x18\x08 \x01(\x0b\x32\'.v2ray.core.app.proxyman.SniffingConfigJ\x04\x08\x06\x10\x07\"\xa6\x01\n\x14InboundHandlerConfig\x12\x0b\n\x03tag\x18\x01 \x01(\t\x12\x41\n\x11receiver_settings\x18\x02 \x01(\x0b\x32&.v2ray.core.common.serial.TypedMessage\x12>\n\x0eproxy_settings\x18\x03 \x01(\x0b\x32&.v2ray.core.common.serial.TypedMessage\"\x10\n\x0eOutboundConfig\"\x91\x02\n\x0cSenderConfig\x12.\n\x03via\x18\x01 \x01(\x0b\x32!.v2ray.core.common.net.IPOrDomain\x12\x44\n\x0fstream_settings\x18\x02 \x01(\x0b\x32+.v2ray.core.transport.internet.StreamConfig\x12\x42\n\x0eproxy_settings\x18\x03 \x01(\x0b\x32*.v2ray.core.transport.internet.ProxyConfig\x12G\n\x12multiplex_settings\x18\x04 \x01(\x0b\x32+.v2ray.core.app.proxyman.MultiplexingConfig\":\n\x12MultiplexingConfig\x12\x0f\n\x07\x65nabled\x18\x01 \x01(\x08\x12\x13\n\x0b\x63oncurrency\x18\x02 \x01(\r*#\n\x0eKnownProtocols\x12\x08\n\x04HTTP\x10\x00\x12\x07\n\x03TLS\x10\x01\x42\x43\n\x1b\x63om.v2ray.core.app.proxymanP\x01Z\x08proxyman\xaa\x02\x17V2Ray.Core.App.Proxymanb\x06proto3')
   ,
   dependencies=[v2ray_dot_com_dot_core_dot_common_dot_net_dot_address__pb2.DESCRIPTOR,v2ray_dot_com_dot_core_dot_common_dot_net_dot_port__pb2.DESCRIPTOR,v2ray_dot_com_dot_core_dot_transport_dot_internet_dot_config__pb2.DESCRIPTOR,v2ray_dot_com_dot_core_dot_common_dot_serial_dot_typed__message__pb2.DESCRIPTOR,])
 
@@ -45,8 +45,8 @@ _KNOWNPROTOCOLS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=1573,
-  serialized_end=1608,
+  serialized_start=1710,
+  serialized_end=1745,
 )
 _sym_db.RegisterEnumDescriptor(_KNOWNPROTOCOLS)
 
@@ -212,6 +212,44 @@ _ALLOCATIONSTRATEGY = _descriptor.Descriptor(
 )
 
 
+_SNIFFINGCONFIG = _descriptor.Descriptor(
+  name='SniffingConfig',
+  full_name='v2ray.core.app.proxyman.SniffingConfig',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='enabled', full_name='v2ray.core.app.proxyman.SniffingConfig.enabled', index=0,
+      number=1, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='destination_override', full_name='v2ray.core.app.proxyman.SniffingConfig.destination_override', index=1,
+      number=2, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=672,
+  serialized_end=735,
+)
+
+
 _RECEIVERCONFIG = _descriptor.Descriptor(
   name='ReceiverConfig',
   full_name='v2ray.core.app.proxyman.ReceiverConfig',
@@ -260,6 +298,13 @@ _RECEIVERCONFIG = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
+      options=_descriptor._ParseOptions(descriptor_pb2.FieldOptions(), _b('\030\001')), file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='sniffing_settings', full_name='v2ray.core.app.proxyman.ReceiverConfig.sniffing_settings', index=6,
+      number=8, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
       options=None, file=DESCRIPTOR),
   ],
   extensions=[
@@ -273,8 +318,8 @@ _RECEIVERCONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=673,
-  serialized_end=1048,
+  serialized_start=738,
+  serialized_end=1185,
 )
 
 
@@ -318,8 +363,8 @@ _INBOUNDHANDLERCONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1051,
-  serialized_end=1217,
+  serialized_start=1188,
+  serialized_end=1354,
 )
 
 
@@ -342,8 +387,8 @@ _OUTBOUNDCONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1219,
-  serialized_end=1235,
+  serialized_start=1356,
+  serialized_end=1372,
 )
 
 
@@ -394,8 +439,8 @@ _SENDERCONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1238,
-  serialized_end=1511,
+  serialized_start=1375,
+  serialized_end=1648,
 )
 
 
@@ -432,8 +477,8 @@ _MULTIPLEXINGCONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1513,
-  serialized_end=1571,
+  serialized_start=1650,
+  serialized_end=1708,
 )
 
 _ALLOCATIONSTRATEGY_ALLOCATIONSTRATEGYCONCURRENCY.containing_type = _ALLOCATIONSTRATEGY
@@ -447,6 +492,7 @@ _RECEIVERCONFIG.fields_by_name['listen'].message_type = v2ray_dot_com_dot_core_d
 _RECEIVERCONFIG.fields_by_name['allocation_strategy'].message_type = _ALLOCATIONSTRATEGY
 _RECEIVERCONFIG.fields_by_name['stream_settings'].message_type = v2ray_dot_com_dot_core_dot_transport_dot_internet_dot_config__pb2._STREAMCONFIG
 _RECEIVERCONFIG.fields_by_name['domain_override'].enum_type = _KNOWNPROTOCOLS
+_RECEIVERCONFIG.fields_by_name['sniffing_settings'].message_type = _SNIFFINGCONFIG
 _INBOUNDHANDLERCONFIG.fields_by_name['receiver_settings'].message_type = v2ray_dot_com_dot_core_dot_common_dot_serial_dot_typed__message__pb2._TYPEDMESSAGE
 _INBOUNDHANDLERCONFIG.fields_by_name['proxy_settings'].message_type = v2ray_dot_com_dot_core_dot_common_dot_serial_dot_typed__message__pb2._TYPEDMESSAGE
 _SENDERCONFIG.fields_by_name['via'].message_type = v2ray_dot_com_dot_core_dot_common_dot_net_dot_address__pb2._IPORDOMAIN
@@ -455,6 +501,7 @@ _SENDERCONFIG.fields_by_name['proxy_settings'].message_type = v2ray_dot_com_dot_
 _SENDERCONFIG.fields_by_name['multiplex_settings'].message_type = _MULTIPLEXINGCONFIG
 DESCRIPTOR.message_types_by_name['InboundConfig'] = _INBOUNDCONFIG
 DESCRIPTOR.message_types_by_name['AllocationStrategy'] = _ALLOCATIONSTRATEGY
+DESCRIPTOR.message_types_by_name['SniffingConfig'] = _SNIFFINGCONFIG
 DESCRIPTOR.message_types_by_name['ReceiverConfig'] = _RECEIVERCONFIG
 DESCRIPTOR.message_types_by_name['InboundHandlerConfig'] = _INBOUNDHANDLERCONFIG
 DESCRIPTOR.message_types_by_name['OutboundConfig'] = _OUTBOUNDCONFIG
@@ -492,6 +539,13 @@ AllocationStrategy = _reflection.GeneratedProtocolMessageType('AllocationStrateg
 _sym_db.RegisterMessage(AllocationStrategy)
 _sym_db.RegisterMessage(AllocationStrategy.AllocationStrategyConcurrency)
 _sym_db.RegisterMessage(AllocationStrategy.AllocationStrategyRefresh)
+
+SniffingConfig = _reflection.GeneratedProtocolMessageType('SniffingConfig', (_message.Message,), dict(
+  DESCRIPTOR = _SNIFFINGCONFIG,
+  __module__ = 'v2ray.com.core.app.proxyman.config_pb2'
+  # @@protoc_insertion_point(class_scope:v2ray.core.app.proxyman.SniffingConfig)
+  ))
+_sym_db.RegisterMessage(SniffingConfig)
 
 ReceiverConfig = _reflection.GeneratedProtocolMessageType('ReceiverConfig', (_message.Message,), dict(
   DESCRIPTOR = _RECEIVERCONFIG,
@@ -531,4 +585,6 @@ _sym_db.RegisterMessage(MultiplexingConfig)
 
 DESCRIPTOR.has_options = True
 DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n\033com.v2ray.core.app.proxymanP\001Z\010proxyman\252\002\027V2Ray.Core.App.Proxyman'))
+_RECEIVERCONFIG.fields_by_name['domain_override'].has_options = True
+_RECEIVERCONFIG.fields_by_name['domain_override']._options = _descriptor._ParseOptions(descriptor_pb2.FieldOptions(), _b('\030\001'))
 # @@protoc_insertion_point(module_scope)

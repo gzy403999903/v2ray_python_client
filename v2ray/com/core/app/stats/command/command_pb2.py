@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/app/stats/command/command.proto',
   package='v2ray.core.app.stats.command',
   syntax='proto3',
-  serialized_pb=_b('\n.v2ray.com/core/app/stats/command/command.proto\x12\x1cv2ray.core.app.stats.command\".\n\x0fGetStatsRequest\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05reset\x18\x02 \x01(\x08\"#\n\x04Stat\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x03\"D\n\x10GetStatsResponse\x12\x30\n\x04stat\x18\x01 \x01(\x0b\x32\".v2ray.core.app.stats.command.Stat\"\x08\n\x06\x43onfig2{\n\x0cStatsService\x12k\n\x08GetStats\x12-.v2ray.core.app.stats.command.GetStatsRequest\x1a..v2ray.core.app.stats.command.GetStatsResponse\"\x00\x42L\n com.v2ray.core.app.stats.commandP\x01Z\x07\x63ommand\xaa\x02\x1cV2Ray.Core.App.Stats.Commandb\x06proto3')
+  serialized_pb=_b('\n.v2ray.com/core/app/stats/command/command.proto\x12\x1cv2ray.core.app.stats.command\".\n\x0fGetStatsRequest\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05reset\x18\x02 \x01(\x08\"#\n\x04Stat\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x03\"D\n\x10GetStatsResponse\x12\x30\n\x04stat\x18\x01 \x01(\x0b\x32\".v2ray.core.app.stats.command.Stat\"3\n\x11QueryStatsRequest\x12\x0f\n\x07pattern\x18\x01 \x01(\t\x12\r\n\x05reset\x18\x02 \x01(\x08\"F\n\x12QueryStatsResponse\x12\x30\n\x04stat\x18\x01 \x03(\x0b\x32\".v2ray.core.app.stats.command.Stat\"\x08\n\x06\x43onfig2\xee\x01\n\x0cStatsService\x12k\n\x08GetStats\x12-.v2ray.core.app.stats.command.GetStatsRequest\x1a..v2ray.core.app.stats.command.GetStatsResponse\"\x00\x12q\n\nQueryStats\x12/.v2ray.core.app.stats.command.QueryStatsRequest\x1a\x30.v2ray.core.app.stats.command.QueryStatsResponse\"\x00\x42L\n com.v2ray.core.app.stats.commandP\x01Z\x07\x63ommand\xaa\x02\x1cV2Ray.Core.App.Stats.Commandb\x06proto3')
 )
 
 
@@ -132,6 +132,75 @@ _GETSTATSRESPONSE = _descriptor.Descriptor(
 )
 
 
+_QUERYSTATSREQUEST = _descriptor.Descriptor(
+  name='QueryStatsRequest',
+  full_name='v2ray.core.app.stats.command.QueryStatsRequest',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='pattern', full_name='v2ray.core.app.stats.command.QueryStatsRequest.pattern', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='reset', full_name='v2ray.core.app.stats.command.QueryStatsRequest.reset', index=1,
+      number=2, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=235,
+  serialized_end=286,
+)
+
+
+_QUERYSTATSRESPONSE = _descriptor.Descriptor(
+  name='QueryStatsResponse',
+  full_name='v2ray.core.app.stats.command.QueryStatsResponse',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='stat', full_name='v2ray.core.app.stats.command.QueryStatsResponse.stat', index=0,
+      number=1, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=288,
+  serialized_end=358,
+)
+
+
 _CONFIG = _descriptor.Descriptor(
   name='Config',
   full_name='v2ray.core.app.stats.command.Config',
@@ -151,14 +220,17 @@ _CONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=235,
-  serialized_end=243,
+  serialized_start=360,
+  serialized_end=368,
 )
 
 _GETSTATSRESPONSE.fields_by_name['stat'].message_type = _STAT
+_QUERYSTATSRESPONSE.fields_by_name['stat'].message_type = _STAT
 DESCRIPTOR.message_types_by_name['GetStatsRequest'] = _GETSTATSREQUEST
 DESCRIPTOR.message_types_by_name['Stat'] = _STAT
 DESCRIPTOR.message_types_by_name['GetStatsResponse'] = _GETSTATSRESPONSE
+DESCRIPTOR.message_types_by_name['QueryStatsRequest'] = _QUERYSTATSREQUEST
+DESCRIPTOR.message_types_by_name['QueryStatsResponse'] = _QUERYSTATSRESPONSE
 DESCRIPTOR.message_types_by_name['Config'] = _CONFIG
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -183,6 +255,20 @@ GetStatsResponse = _reflection.GeneratedProtocolMessageType('GetStatsResponse', 
   ))
 _sym_db.RegisterMessage(GetStatsResponse)
 
+QueryStatsRequest = _reflection.GeneratedProtocolMessageType('QueryStatsRequest', (_message.Message,), dict(
+  DESCRIPTOR = _QUERYSTATSREQUEST,
+  __module__ = 'v2ray.com.core.app.stats.command.command_pb2'
+  # @@protoc_insertion_point(class_scope:v2ray.core.app.stats.command.QueryStatsRequest)
+  ))
+_sym_db.RegisterMessage(QueryStatsRequest)
+
+QueryStatsResponse = _reflection.GeneratedProtocolMessageType('QueryStatsResponse', (_message.Message,), dict(
+  DESCRIPTOR = _QUERYSTATSRESPONSE,
+  __module__ = 'v2ray.com.core.app.stats.command.command_pb2'
+  # @@protoc_insertion_point(class_scope:v2ray.core.app.stats.command.QueryStatsResponse)
+  ))
+_sym_db.RegisterMessage(QueryStatsResponse)
+
 Config = _reflection.GeneratedProtocolMessageType('Config', (_message.Message,), dict(
   DESCRIPTOR = _CONFIG,
   __module__ = 'v2ray.com.core.app.stats.command.command_pb2'
@@ -200,8 +286,8 @@ _STATSSERVICE = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   options=None,
-  serialized_start=245,
-  serialized_end=368,
+  serialized_start=371,
+  serialized_end=609,
   methods=[
   _descriptor.MethodDescriptor(
     name='GetStats',
@@ -210,6 +296,15 @@ _STATSSERVICE = _descriptor.ServiceDescriptor(
     containing_service=None,
     input_type=_GETSTATSREQUEST,
     output_type=_GETSTATSRESPONSE,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='QueryStats',
+    full_name='v2ray.core.app.stats.command.StatsService.QueryStats',
+    index=1,
+    containing_service=None,
+    input_type=_QUERYSTATSREQUEST,
+    output_type=_QUERYSTATSRESPONSE,
     options=None,
   ),
 ])

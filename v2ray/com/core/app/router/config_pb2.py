@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/app/router/config.proto',
   package='v2ray.core.app.router',
   syntax='proto3',
-  serialized_pb=_b('\n&v2ray.com/core/app/router/config.proto\x12\x15v2ray.core.app.router\x1a$v2ray.com/core/common/net/port.proto\x1a\'v2ray.com/core/common/net/network.proto\"s\n\x06\x44omain\x12\x30\n\x04type\x18\x01 \x01(\x0e\x32\".v2ray.core.app.router.Domain.Type\x12\r\n\x05value\x18\x02 \x01(\t\"(\n\x04Type\x12\t\n\x05Plain\x10\x00\x12\t\n\x05Regex\x10\x01\x12\n\n\x06\x44omain\x10\x02\"\"\n\x04\x43IDR\x12\n\n\x02ip\x18\x01 \x01(\x0c\x12\x0e\n\x06prefix\x18\x02 \x01(\r\"H\n\x05GeoIP\x12\x14\n\x0c\x63ountry_code\x18\x01 \x01(\t\x12)\n\x04\x63idr\x18\x02 \x03(\x0b\x32\x1b.v2ray.core.app.router.CIDR\"8\n\tGeoIPList\x12+\n\x05\x65ntry\x18\x01 \x03(\x0b\x32\x1c.v2ray.core.app.router.GeoIP\"N\n\x07GeoSite\x12\x14\n\x0c\x63ountry_code\x18\x01 \x01(\t\x12-\n\x06\x64omain\x18\x02 \x03(\x0b\x32\x1d.v2ray.core.app.router.Domain\"<\n\x0bGeoSiteList\x12-\n\x05\x65ntry\x18\x01 \x03(\x0b\x32\x1e.v2ray.core.app.router.GeoSite\"\xbf\x02\n\x0bRoutingRule\x12\x0b\n\x03tag\x18\x01 \x01(\t\x12-\n\x06\x64omain\x18\x02 \x03(\x0b\x32\x1d.v2ray.core.app.router.Domain\x12)\n\x04\x63idr\x18\x03 \x03(\x0b\x32\x1b.v2ray.core.app.router.CIDR\x12\x34\n\nport_range\x18\x04 \x01(\x0b\x32 .v2ray.core.common.net.PortRange\x12\x38\n\x0cnetwork_list\x18\x05 \x01(\x0b\x32\".v2ray.core.common.net.NetworkList\x12\x30\n\x0bsource_cidr\x18\x06 \x03(\x0b\x32\x1b.v2ray.core.app.router.CIDR\x12\x12\n\nuser_email\x18\x07 \x03(\t\x12\x13\n\x0binbound_tag\x18\x08 \x03(\t\"\xca\x01\n\x06\x43onfig\x12\x45\n\x0f\x64omain_strategy\x18\x01 \x01(\x0e\x32,.v2ray.core.app.router.Config.DomainStrategy\x12\x30\n\x04rule\x18\x02 \x03(\x0b\x32\".v2ray.core.app.router.RoutingRule\"G\n\x0e\x44omainStrategy\x12\x08\n\x04\x41sIs\x10\x00\x12\t\n\x05UseIp\x10\x01\x12\x10\n\x0cIpIfNonMatch\x10\x02\x12\x0e\n\nIpOnDemand\x10\x03\x42=\n\x19\x63om.v2ray.core.app.routerP\x01Z\x06router\xaa\x02\x15V2Ray.Core.App.Routerb\x06proto3')
+  serialized_pb=_b('\n&v2ray.com/core/app/router/config.proto\x12\x15v2ray.core.app.router\x1a$v2ray.com/core/common/net/port.proto\x1a\'v2ray.com/core/common/net/network.proto\"}\n\x06\x44omain\x12\x30\n\x04type\x18\x01 \x01(\x0e\x32\".v2ray.core.app.router.Domain.Type\x12\r\n\x05value\x18\x02 \x01(\t\"2\n\x04Type\x12\t\n\x05Plain\x10\x00\x12\t\n\x05Regex\x10\x01\x12\n\n\x06\x44omain\x10\x02\x12\x08\n\x04\x46ull\x10\x03\"\"\n\x04\x43IDR\x12\n\n\x02ip\x18\x01 \x01(\x0c\x12\x0e\n\x06prefix\x18\x02 \x01(\r\"H\n\x05GeoIP\x12\x14\n\x0c\x63ountry_code\x18\x01 \x01(\t\x12)\n\x04\x63idr\x18\x02 \x03(\x0b\x32\x1b.v2ray.core.app.router.CIDR\"8\n\tGeoIPList\x12+\n\x05\x65ntry\x18\x01 \x03(\x0b\x32\x1c.v2ray.core.app.router.GeoIP\"N\n\x07GeoSite\x12\x14\n\x0c\x63ountry_code\x18\x01 \x01(\t\x12-\n\x06\x64omain\x18\x02 \x03(\x0b\x32\x1d.v2ray.core.app.router.Domain\"<\n\x0bGeoSiteList\x12-\n\x05\x65ntry\x18\x01 \x03(\x0b\x32\x1e.v2ray.core.app.router.GeoSite\"\xd1\x02\n\x0bRoutingRule\x12\x0b\n\x03tag\x18\x01 \x01(\t\x12-\n\x06\x64omain\x18\x02 \x03(\x0b\x32\x1d.v2ray.core.app.router.Domain\x12)\n\x04\x63idr\x18\x03 \x03(\x0b\x32\x1b.v2ray.core.app.router.CIDR\x12\x34\n\nport_range\x18\x04 \x01(\x0b\x32 .v2ray.core.common.net.PortRange\x12\x38\n\x0cnetwork_list\x18\x05 \x01(\x0b\x32\".v2ray.core.common.net.NetworkList\x12\x30\n\x0bsource_cidr\x18\x06 \x03(\x0b\x32\x1b.v2ray.core.app.router.CIDR\x12\x12\n\nuser_email\x18\x07 \x03(\t\x12\x13\n\x0binbound_tag\x18\x08 \x03(\t\x12\x10\n\x08protocol\x18\t \x03(\t\"\xca\x01\n\x06\x43onfig\x12\x45\n\x0f\x64omain_strategy\x18\x01 \x01(\x0e\x32,.v2ray.core.app.router.Config.DomainStrategy\x12\x30\n\x04rule\x18\x02 \x03(\x0b\x32\".v2ray.core.app.router.RoutingRule\"G\n\x0e\x44omainStrategy\x12\x08\n\x04\x41sIs\x10\x00\x12\t\n\x05UseIp\x10\x01\x12\x10\n\x0cIpIfNonMatch\x10\x02\x12\x0e\n\nIpOnDemand\x10\x03\x42=\n\x19\x63om.v2ray.core.app.routerP\x01Z\x06router\xaa\x02\x15V2Ray.Core.App.Routerb\x06proto3')
   ,
   dependencies=[v2ray_dot_com_dot_core_dot_common_dot_net_dot_port__pb2.DESCRIPTOR,v2ray_dot_com_dot_core_dot_common_dot_net_dot_network__pb2.DESCRIPTOR,])
 
@@ -45,11 +45,15 @@ _DOMAIN_TYPE = _descriptor.EnumDescriptor(
       name='Domain', index=2, number=2,
       options=None,
       type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Full', index=3, number=3,
+      options=None,
+      type=None),
   ],
   containing_type=None,
   options=None,
   serialized_start=219,
-  serialized_end=259,
+  serialized_end=269,
 )
 _sym_db.RegisterEnumDescriptor(_DOMAIN_TYPE)
 
@@ -78,8 +82,8 @@ _CONFIG_DOMAINSTRATEGY = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=1025,
-  serialized_end=1096,
+  serialized_start=1053,
+  serialized_end=1124,
 )
 _sym_db.RegisterEnumDescriptor(_CONFIG_DOMAINSTRATEGY)
 
@@ -119,7 +123,7 @@ _DOMAIN = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=144,
-  serialized_end=259,
+  serialized_end=269,
 )
 
 
@@ -156,8 +160,8 @@ _CIDR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=261,
-  serialized_end=295,
+  serialized_start=271,
+  serialized_end=305,
 )
 
 
@@ -194,8 +198,8 @@ _GEOIP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=297,
-  serialized_end=369,
+  serialized_start=307,
+  serialized_end=379,
 )
 
 
@@ -225,8 +229,8 @@ _GEOIPLIST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=371,
-  serialized_end=427,
+  serialized_start=381,
+  serialized_end=437,
 )
 
 
@@ -263,8 +267,8 @@ _GEOSITE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=429,
-  serialized_end=507,
+  serialized_start=439,
+  serialized_end=517,
 )
 
 
@@ -294,8 +298,8 @@ _GEOSITELIST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=509,
-  serialized_end=569,
+  serialized_start=519,
+  serialized_end=579,
 )
 
 
@@ -362,6 +366,13 @@ _ROUTINGRULE = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='protocol', full_name='v2ray.core.app.router.RoutingRule.protocol', index=8,
+      number=9, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -374,8 +385,8 @@ _ROUTINGRULE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=572,
-  serialized_end=891,
+  serialized_start=582,
+  serialized_end=919,
 )
 
 
@@ -413,8 +424,8 @@ _CONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=894,
-  serialized_end=1096,
+  serialized_start=922,
+  serialized_end=1124,
 )
 
 _DOMAIN.fields_by_name['type'].enum_type = _DOMAIN_TYPE
