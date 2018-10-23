@@ -7,7 +7,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -19,6 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/transport/internet/tls/config.proto',
   package='v2ray.core.transport.internet.tls',
   syntax='proto3',
+  serialized_options=_b('\n%com.v2ray.core.transport.internet.tlsP\001Z\003tls\252\002!V2Ray.Core.Transport.Internet.Tls'),
   serialized_pb=_b('\n2v2ray.com/core/transport/internet/tls/config.proto\x12!v2ray.core.transport.internet.tls\"\xba\x01\n\x0b\x43\x65rtificate\x12\x13\n\x0b\x43\x65rtificate\x18\x01 \x01(\x0c\x12\x0b\n\x03Key\x18\x02 \x01(\x0c\x12\x43\n\x05usage\x18\x03 \x01(\x0e\x32\x34.v2ray.core.transport.internet.tls.Certificate.Usage\"D\n\x05Usage\x12\x10\n\x0c\x45NCIPHERMENT\x10\x00\x12\x14\n\x10\x41UTHORITY_VERIFY\x10\x01\x12\x13\n\x0f\x41UTHORITY_ISSUE\x10\x02\"\xd5\x01\n\x06\x43onfig\x12\x16\n\x0e\x61llow_insecure\x18\x01 \x01(\x08\x12\x1e\n\x16\x61llow_insecure_ciphers\x18\x05 \x01(\x08\x12\x43\n\x0b\x63\x65rtificate\x18\x02 \x03(\x0b\x32..v2ray.core.transport.internet.tls.Certificate\x12\x13\n\x0bserver_name\x18\x03 \x01(\t\x12\x15\n\rnext_protocol\x18\x04 \x03(\t\x12\"\n\x1a\x64isable_session_resumption\x18\x06 \x01(\x08\x42R\n%com.v2ray.core.transport.internet.tlsP\x01Z\x03tls\xaa\x02!V2Ray.Core.Transport.Internet.Tlsb\x06proto3')
 )
 
@@ -32,19 +32,19 @@ _CERTIFICATE_USAGE = _descriptor.EnumDescriptor(
   values=[
     _descriptor.EnumValueDescriptor(
       name='ENCIPHERMENT', index=0, number=0,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='AUTHORITY_VERIFY', index=1, number=1,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='AUTHORITY_ISSUE', index=2, number=2,
-      options=None,
+      serialized_options=None,
       type=None),
   ],
   containing_type=None,
-  options=None,
+  serialized_options=None,
   serialized_start=208,
   serialized_end=276,
 )
@@ -64,21 +64,21 @@ _CERTIFICATE = _descriptor.Descriptor(
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='Key', full_name='v2ray.core.transport.internet.tls.Certificate.Key', index=1,
       number=2, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='usage', full_name='v2ray.core.transport.internet.tls.Certificate.usage', index=2,
       number=3, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -86,7 +86,7 @@ _CERTIFICATE = _descriptor.Descriptor(
   enum_types=[
     _CERTIFICATE_USAGE,
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -110,49 +110,49 @@ _CONFIG = _descriptor.Descriptor(
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='allow_insecure_ciphers', full_name='v2ray.core.transport.internet.tls.Config.allow_insecure_ciphers', index=1,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='certificate', full_name='v2ray.core.transport.internet.tls.Config.certificate', index=2,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='server_name', full_name='v2ray.core.transport.internet.tls.Config.server_name', index=3,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='next_protocol', full_name='v2ray.core.transport.internet.tls.Config.next_protocol', index=4,
       number=4, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='disable_session_resumption', full_name='v2ray.core.transport.internet.tls.Config.disable_session_resumption', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -184,6 +184,5 @@ Config = _reflection.GeneratedProtocolMessageType('Config', (_message.Message,),
 _sym_db.RegisterMessage(Config)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n%com.v2ray.core.transport.internet.tlsP\001Z\003tls\252\002!V2Ray.Core.Transport.Internet.Tls'))
+DESCRIPTOR._options = None
 # @@protoc_insertion_point(module_scope)

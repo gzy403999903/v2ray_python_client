@@ -7,7 +7,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -20,6 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/proxy/freedom/config.proto',
   package='v2ray.core.proxy.freedom',
   syntax='proto3',
+  serialized_options=_b('\n\034com.v2ray.core.proxy.freedomP\001Z\007freedom\252\002\030V2Ray.Core.Proxy.Freedom'),
   serialized_pb=_b('\n)v2ray.com/core/proxy/freedom/config.proto\x12\x18v2ray.core.proxy.freedom\x1a\x30v2ray.com/core/common/protocol/server_spec.proto\"Q\n\x13\x44\x65stinationOverride\x12:\n\x06server\x18\x01 \x01(\x0b\x32*.v2ray.core.common.protocol.ServerEndpoint\"\xf1\x01\n\x06\x43onfig\x12H\n\x0f\x64omain_strategy\x18\x01 \x01(\x0e\x32/.v2ray.core.proxy.freedom.Config.DomainStrategy\x12\x13\n\x07timeout\x18\x02 \x01(\rB\x02\x18\x01\x12K\n\x14\x64\x65stination_override\x18\x03 \x01(\x0b\x32-.v2ray.core.proxy.freedom.DestinationOverride\x12\x12\n\nuser_level\x18\x04 \x01(\r\"\'\n\x0e\x44omainStrategy\x12\t\n\x05\x41S_IS\x10\x00\x12\n\n\x06USE_IP\x10\x01\x42\x44\n\x1c\x63om.v2ray.core.proxy.freedomP\x01Z\x07\x66reedom\xaa\x02\x18V2Ray.Core.Proxy.Freedomb\x06proto3')
   ,
   dependencies=[v2ray_dot_com_dot_core_dot_common_dot_protocol_dot_server__spec__pb2.DESCRIPTOR,])
@@ -34,15 +34,15 @@ _CONFIG_DOMAINSTRATEGY = _descriptor.EnumDescriptor(
   values=[
     _descriptor.EnumValueDescriptor(
       name='AS_IS', index=0, number=0,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='USE_IP', index=1, number=1,
-      options=None,
+      serialized_options=None,
       type=None),
   ],
   containing_type=None,
-  options=None,
+  serialized_options=None,
   serialized_start=407,
   serialized_end=446,
 )
@@ -62,14 +62,14 @@ _DESTINATIONOVERRIDE = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -93,28 +93,28 @@ _CONFIG = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='timeout', full_name='v2ray.core.proxy.freedom.Config.timeout', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=_descriptor._ParseOptions(descriptor_pb2.FieldOptions(), _b('\030\001')), file=DESCRIPTOR),
+      serialized_options=_b('\030\001'), file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='destination_override', full_name='v2ray.core.proxy.freedom.Config.destination_override', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='user_level', full_name='v2ray.core.proxy.freedom.Config.user_level', index=3,
       number=4, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -122,7 +122,7 @@ _CONFIG = _descriptor.Descriptor(
   enum_types=[
     _CONFIG_DOMAINSTRATEGY,
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -155,8 +155,6 @@ Config = _reflection.GeneratedProtocolMessageType('Config', (_message.Message,),
 _sym_db.RegisterMessage(Config)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n\034com.v2ray.core.proxy.freedomP\001Z\007freedom\252\002\030V2Ray.Core.Proxy.Freedom'))
-_CONFIG.fields_by_name['timeout'].has_options = True
-_CONFIG.fields_by_name['timeout']._options = _descriptor._ParseOptions(descriptor_pb2.FieldOptions(), _b('\030\001'))
+DESCRIPTOR._options = None
+_CONFIG.fields_by_name['timeout']._options = None
 # @@protoc_insertion_point(module_scope)

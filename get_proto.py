@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+#coding: utf-8
 import os
 import shutil
 import getopt
@@ -61,7 +63,7 @@ if __name__ == '__main__':
 
     walk('v2ray.com', 'v2ray.com')
 
-    command_str = 'python -m grpc.tools.protoc -I=. --python_out=grpc_dir --grpc_python_out=grpc_dir ' + command_str
+    command_str = 'python3 -m grpc.tools.protoc -I=. --python_out=grpc_dir --grpc_python_out=grpc_dir ' + command_str
 
     print('\n -----------执行脚本生成-----------  \n')
 

@@ -8,7 +8,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -20,6 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/common/protocol/headers.proto',
   package='v2ray.core.common.protocol',
   syntax='proto3',
+  serialized_options=_b('\n\036com.v2ray.core.common.protocolP\001Z\010protocol\252\002\032V2Ray.Core.Common.Protocol'),
   serialized_pb=_b('\n,v2ray.com/core/common/protocol/headers.proto\x12\x1av2ray.core.common.protocol\"H\n\x0eSecurityConfig\x12\x36\n\x04type\x18\x01 \x01(\x0e\x32(.v2ray.core.common.protocol.SecurityType*b\n\x0cSecurityType\x12\x0b\n\x07UNKNOWN\x10\x00\x12\n\n\x06LEGACY\x10\x01\x12\x08\n\x04\x41UTO\x10\x02\x12\x0e\n\nAES128_GCM\x10\x03\x12\x15\n\x11\x43HACHA20_POLY1305\x10\x04\x12\x08\n\x04NONE\x10\x05\x42I\n\x1e\x63om.v2ray.core.common.protocolP\x01Z\x08protocol\xaa\x02\x1aV2Ray.Core.Common.Protocolb\x06proto3')
 )
 
@@ -31,31 +31,31 @@ _SECURITYTYPE = _descriptor.EnumDescriptor(
   values=[
     _descriptor.EnumValueDescriptor(
       name='UNKNOWN', index=0, number=0,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='LEGACY', index=1, number=1,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='AUTO', index=2, number=2,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='AES128_GCM', index=3, number=3,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='CHACHA20_POLY1305', index=4, number=4,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='NONE', index=5, number=5,
-      options=None,
+      serialized_options=None,
       type=None),
   ],
   containing_type=None,
-  options=None,
+  serialized_options=None,
   serialized_start=150,
   serialized_end=248,
 )
@@ -84,14 +84,14 @@ _SECURITYCONFIG = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -114,6 +114,5 @@ SecurityConfig = _reflection.GeneratedProtocolMessageType('SecurityConfig', (_me
 _sym_db.RegisterMessage(SecurityConfig)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n\036com.v2ray.core.common.protocolP\001Z\010protocol\252\002\032V2Ray.Core.Common.Protocol'))
+DESCRIPTOR._options = None
 # @@protoc_insertion_point(module_scope)

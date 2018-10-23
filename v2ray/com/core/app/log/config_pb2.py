@@ -8,7 +8,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -21,6 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/app/log/config.proto',
   package='v2ray.core.app.log',
   syntax='proto3',
+  serialized_options=_b('\n\026com.v2ray.core.app.logP\001Z\003log\252\002\022V2Ray.Core.App.Log'),
   serialized_pb=_b('\n#v2ray.com/core/app/log/config.proto\x12\x12v2ray.core.app.log\x1a#v2ray.com/core/common/log/log.proto\"\xde\x01\n\x06\x43onfig\x12\x33\n\x0e\x65rror_log_type\x18\x01 \x01(\x0e\x32\x1b.v2ray.core.app.log.LogType\x12\x38\n\x0f\x65rror_log_level\x18\x02 \x01(\x0e\x32\x1f.v2ray.core.common.log.Severity\x12\x16\n\x0e\x65rror_log_path\x18\x03 \x01(\t\x12\x34\n\x0f\x61\x63\x63\x65ss_log_type\x18\x04 \x01(\x0e\x32\x1b.v2ray.core.app.log.LogType\x12\x17\n\x0f\x61\x63\x63\x65ss_log_path\x18\x05 \x01(\t*5\n\x07LogType\x12\x08\n\x04None\x10\x00\x12\x0b\n\x07\x43onsole\x10\x01\x12\x08\n\x04\x46ile\x10\x02\x12\t\n\x05\x45vent\x10\x03\x42\x34\n\x16\x63om.v2ray.core.app.logP\x01Z\x03log\xaa\x02\x12V2Ray.Core.App.Logb\x06proto3')
   ,
   dependencies=[v2ray_dot_com_dot_core_dot_common_dot_log_dot_log__pb2.DESCRIPTOR,])
@@ -33,23 +33,23 @@ _LOGTYPE = _descriptor.EnumDescriptor(
   values=[
     _descriptor.EnumValueDescriptor(
       name='None', index=0, number=0,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='Console', index=1, number=1,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='File', index=2, number=2,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='Event', index=3, number=3,
-      options=None,
+      serialized_options=None,
       type=None),
   ],
   containing_type=None,
-  options=None,
+  serialized_options=None,
   serialized_start=321,
   serialized_end=374,
 )
@@ -76,42 +76,42 @@ _CONFIG = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='error_log_level', full_name='v2ray.core.app.log.Config.error_log_level', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='error_log_path', full_name='v2ray.core.app.log.Config.error_log_path', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='access_log_type', full_name='v2ray.core.app.log.Config.access_log_type', index=3,
       number=4, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='access_log_path', full_name='v2ray.core.app.log.Config.access_log_path', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -136,6 +136,5 @@ Config = _reflection.GeneratedProtocolMessageType('Config', (_message.Message,),
 _sym_db.RegisterMessage(Config)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n\026com.v2ray.core.app.logP\001Z\003log\252\002\022V2Ray.Core.App.Log'))
+DESCRIPTOR._options = None
 # @@protoc_insertion_point(module_scope)

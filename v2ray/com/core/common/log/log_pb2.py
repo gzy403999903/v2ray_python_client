@@ -8,7 +8,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -20,6 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/common/log/log.proto',
   package='v2ray.core.common.log',
   syntax='proto3',
+  serialized_options=_b('\n\031com.v2ray.core.common.logP\001Z\003log\252\002\025V2Ray.Core.Common.Log'),
   serialized_pb=_b('\n#v2ray.com/core/common/log/log.proto\x12\x15v2ray.core.common.log*D\n\x08Severity\x12\x0b\n\x07Unknown\x10\x00\x12\t\n\x05\x45rror\x10\x01\x12\x0b\n\x07Warning\x10\x02\x12\x08\n\x04Info\x10\x03\x12\t\n\x05\x44\x65\x62ug\x10\x04\x42:\n\x19\x63om.v2ray.core.common.logP\x01Z\x03log\xaa\x02\x15V2Ray.Core.Common.Logb\x06proto3')
 )
 
@@ -31,27 +31,27 @@ _SEVERITY = _descriptor.EnumDescriptor(
   values=[
     _descriptor.EnumValueDescriptor(
       name='Unknown', index=0, number=0,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='Error', index=1, number=1,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='Warning', index=2, number=2,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='Info', index=3, number=3,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='Debug', index=4, number=4,
-      options=None,
+      serialized_options=None,
       type=None),
   ],
   containing_type=None,
-  options=None,
+  serialized_options=None,
   serialized_start=62,
   serialized_end=130,
 )
@@ -69,6 +69,5 @@ DESCRIPTOR.enum_types_by_name['Severity'] = _SEVERITY
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n\031com.v2ray.core.common.logP\001Z\003log\252\002\025V2Ray.Core.Common.Log'))
+DESCRIPTOR._options = None
 # @@protoc_insertion_point(module_scope)

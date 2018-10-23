@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import os
 import shutil
@@ -19,7 +19,7 @@ def fixDir():
         for i in fileName:
             if i.endswith(".proto"):
                 return path
-            
+
 def genProto():
     for (path, _, fileName) in os.walk("./"):
         for i in fileName:

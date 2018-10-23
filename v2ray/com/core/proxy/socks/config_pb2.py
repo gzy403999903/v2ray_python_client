@@ -8,7 +8,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -22,6 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/proxy/socks/config.proto',
   package='v2ray.core.proxy.socks',
   syntax='proto3',
+  serialized_options=_b('\n\032com.v2ray.core.proxy.socksP\001Z\005socks\252\002\026V2Ray.Core.Proxy.Socks'),
   serialized_pb=_b('\n\'v2ray.com/core/proxy/socks/config.proto\x12\x16v2ray.core.proxy.socks\x1a\'v2ray.com/core/common/net/address.proto\x1a\x30v2ray.com/core/common/protocol/server_spec.proto\"-\n\x07\x41\x63\x63ount\x12\x10\n\x08username\x18\x01 \x01(\t\x12\x10\n\x08password\x18\x02 \x01(\t\"\xac\x02\n\x0cServerConfig\x12\x33\n\tauth_type\x18\x01 \x01(\x0e\x32 .v2ray.core.proxy.socks.AuthType\x12\x44\n\x08\x61\x63\x63ounts\x18\x02 \x03(\x0b\x32\x32.v2ray.core.proxy.socks.ServerConfig.AccountsEntry\x12\x32\n\x07\x61\x64\x64ress\x18\x03 \x01(\x0b\x32!.v2ray.core.common.net.IPOrDomain\x12\x13\n\x0budp_enabled\x18\x04 \x01(\x08\x12\x13\n\x07timeout\x18\x05 \x01(\rB\x02\x18\x01\x12\x12\n\nuser_level\x18\x06 \x01(\r\x1a/\n\rAccountsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\"J\n\x0c\x43lientConfig\x12:\n\x06server\x18\x01 \x03(\x0b\x32*.v2ray.core.common.protocol.ServerEndpoint*%\n\x08\x41uthType\x12\x0b\n\x07NO_AUTH\x10\x00\x12\x0c\n\x08PASSWORD\x10\x01\x42>\n\x1a\x63om.v2ray.core.proxy.socksP\x01Z\x05socks\xaa\x02\x16V2Ray.Core.Proxy.Socksb\x06proto3')
   ,
   dependencies=[v2ray_dot_com_dot_core_dot_common_dot_net_dot_address__pb2.DESCRIPTOR,v2ray_dot_com_dot_core_dot_common_dot_protocol_dot_server__spec__pb2.DESCRIPTOR,])
@@ -34,15 +34,15 @@ _AUTHTYPE = _descriptor.EnumDescriptor(
   values=[
     _descriptor.EnumValueDescriptor(
       name='NO_AUTH', index=0, number=0,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='PASSWORD', index=1, number=1,
-      options=None,
+      serialized_options=None,
       type=None),
   ],
   containing_type=None,
-  options=None,
+  serialized_options=None,
   serialized_start=584,
   serialized_end=621,
 )
@@ -67,21 +67,21 @@ _ACCOUNT = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='password', full_name='v2ray.core.proxy.socks.Account.password', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -105,21 +105,21 @@ _SERVERCONFIG_ACCOUNTSENTRY = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='value', full_name='v2ray.core.proxy.socks.ServerConfig.AccountsEntry.value', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=_descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001')),
+  serialized_options=_b('8\001'),
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -142,49 +142,49 @@ _SERVERCONFIG = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='accounts', full_name='v2ray.core.proxy.socks.ServerConfig.accounts', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='address', full_name='v2ray.core.proxy.socks.ServerConfig.address', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='udp_enabled', full_name='v2ray.core.proxy.socks.ServerConfig.udp_enabled', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='timeout', full_name='v2ray.core.proxy.socks.ServerConfig.timeout', index=4,
       number=5, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=_descriptor._ParseOptions(descriptor_pb2.FieldOptions(), _b('\030\001')), file=DESCRIPTOR),
+      serialized_options=_b('\030\001'), file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='user_level', full_name='v2ray.core.proxy.socks.ServerConfig.user_level', index=5,
       number=6, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[_SERVERCONFIG_ACCOUNTSENTRY, ],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -208,14 +208,14 @@ _CLIENTCONFIG = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -266,10 +266,7 @@ ClientConfig = _reflection.GeneratedProtocolMessageType('ClientConfig', (_messag
 _sym_db.RegisterMessage(ClientConfig)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n\032com.v2ray.core.proxy.socksP\001Z\005socks\252\002\026V2Ray.Core.Proxy.Socks'))
-_SERVERCONFIG_ACCOUNTSENTRY.has_options = True
-_SERVERCONFIG_ACCOUNTSENTRY._options = _descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001'))
-_SERVERCONFIG.fields_by_name['timeout'].has_options = True
-_SERVERCONFIG.fields_by_name['timeout']._options = _descriptor._ParseOptions(descriptor_pb2.FieldOptions(), _b('\030\001'))
+DESCRIPTOR._options = None
+_SERVERCONFIG_ACCOUNTSENTRY._options = None
+_SERVERCONFIG.fields_by_name['timeout']._options = None
 # @@protoc_insertion_point(module_scope)

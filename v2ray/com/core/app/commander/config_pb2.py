@@ -7,7 +7,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -20,6 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/app/commander/config.proto',
   package='v2ray.core.app.commander',
   syntax='proto3',
+  serialized_options=_b('\n\034com.v2ray.core.app.commanderP\001Z\tcommander\252\002\030V2Ray.Core.App.Commander'),
   serialized_pb=_b('\n)v2ray.com/core/app/commander/config.proto\x12\x18v2ray.core.app.commander\x1a\x30v2ray.com/core/common/serial/typed_message.proto\"N\n\x06\x43onfig\x12\x0b\n\x03tag\x18\x01 \x01(\t\x12\x37\n\x07service\x18\x02 \x03(\x0b\x32&.v2ray.core.common.serial.TypedMessageBF\n\x1c\x63om.v2ray.core.app.commanderP\x01Z\tcommander\xaa\x02\x18V2Ray.Core.App.Commanderb\x06proto3')
   ,
   dependencies=[v2ray_dot_com_dot_core_dot_common_dot_serial_dot_typed__message__pb2.DESCRIPTOR,])
@@ -40,21 +40,21 @@ _CONFIG = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='service', full_name='v2ray.core.app.commander.Config.service', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -76,6 +76,5 @@ Config = _reflection.GeneratedProtocolMessageType('Config', (_message.Message,),
 _sym_db.RegisterMessage(Config)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n\034com.v2ray.core.app.commanderP\001Z\tcommander\252\002\030V2Ray.Core.App.Commander'))
+DESCRIPTOR._options = None
 # @@protoc_insertion_point(module_scope)

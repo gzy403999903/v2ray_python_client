@@ -7,7 +7,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -19,6 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/common/net/address.proto',
   package='v2ray.core.common.net',
   syntax='proto3',
+  serialized_options=_b('\n\031com.v2ray.core.common.netP\001Z\003net\252\002\025V2Ray.Core.Common.Net'),
   serialized_pb=_b('\n\'v2ray.com/core/common/net/address.proto\x12\x15v2ray.core.common.net\"7\n\nIPOrDomain\x12\x0c\n\x02ip\x18\x01 \x01(\x0cH\x00\x12\x10\n\x06\x64omain\x18\x02 \x01(\tH\x00\x42\t\n\x07\x61\x64\x64ressB:\n\x19\x63om.v2ray.core.common.netP\x01Z\x03net\xaa\x02\x15V2Ray.Core.Common.Netb\x06proto3')
 )
 
@@ -38,21 +38,21 @@ _IPORDOMAIN = _descriptor.Descriptor(
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='domain', full_name='v2ray.core.common.net.IPOrDomain.domain', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -82,6 +82,5 @@ IPOrDomain = _reflection.GeneratedProtocolMessageType('IPOrDomain', (_message.Me
 _sym_db.RegisterMessage(IPOrDomain)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n\031com.v2ray.core.common.netP\001Z\003net\252\002\025V2Ray.Core.Common.Net'))
+DESCRIPTOR._options = None
 # @@protoc_insertion_point(module_scope)

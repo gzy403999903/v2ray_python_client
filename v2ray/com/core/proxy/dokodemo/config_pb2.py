@@ -7,7 +7,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -21,6 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/proxy/dokodemo/config.proto',
   package='v2ray.core.proxy.dokodemo',
   syntax='proto3',
+  serialized_options=_b('\n\035com.v2ray.core.proxy.dokodemoP\001Z\010dokodemo\252\002\031V2Ray.Core.Proxy.Dokodemo'),
   serialized_pb=_b('\n*v2ray.com/core/proxy/dokodemo/config.proto\x12\x19v2ray.core.proxy.dokodemo\x1a\'v2ray.com/core/common/net/address.proto\x1a\'v2ray.com/core/common/net/network.proto\"\xc6\x01\n\x06\x43onfig\x12\x32\n\x07\x61\x64\x64ress\x18\x01 \x01(\x0b\x32!.v2ray.core.common.net.IPOrDomain\x12\x0c\n\x04port\x18\x02 \x01(\r\x12\x38\n\x0cnetwork_list\x18\x03 \x01(\x0b\x32\".v2ray.core.common.net.NetworkList\x12\x13\n\x07timeout\x18\x04 \x01(\rB\x02\x18\x01\x12\x17\n\x0f\x66ollow_redirect\x18\x05 \x01(\x08\x12\x12\n\nuser_level\x18\x06 \x01(\rBG\n\x1d\x63om.v2ray.core.proxy.dokodemoP\x01Z\x08\x64okodemo\xaa\x02\x19V2Ray.Core.Proxy.Dokodemob\x06proto3')
   ,
   dependencies=[v2ray_dot_com_dot_core_dot_common_dot_net_dot_address__pb2.DESCRIPTOR,v2ray_dot_com_dot_core_dot_common_dot_net_dot_network__pb2.DESCRIPTOR,])
@@ -41,49 +41,49 @@ _CONFIG = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='port', full_name='v2ray.core.proxy.dokodemo.Config.port', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='network_list', full_name='v2ray.core.proxy.dokodemo.Config.network_list', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='timeout', full_name='v2ray.core.proxy.dokodemo.Config.timeout', index=3,
       number=4, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=_descriptor._ParseOptions(descriptor_pb2.FieldOptions(), _b('\030\001')), file=DESCRIPTOR),
+      serialized_options=_b('\030\001'), file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='follow_redirect', full_name='v2ray.core.proxy.dokodemo.Config.follow_redirect', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='user_level', full_name='v2ray.core.proxy.dokodemo.Config.user_level', index=5,
       number=6, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -106,8 +106,6 @@ Config = _reflection.GeneratedProtocolMessageType('Config', (_message.Message,),
 _sym_db.RegisterMessage(Config)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n\035com.v2ray.core.proxy.dokodemoP\001Z\010dokodemo\252\002\031V2Ray.Core.Proxy.Dokodemo'))
-_CONFIG.fields_by_name['timeout'].has_options = True
-_CONFIG.fields_by_name['timeout']._options = _descriptor._ParseOptions(descriptor_pb2.FieldOptions(), _b('\030\001'))
+DESCRIPTOR._options = None
+_CONFIG.fields_by_name['timeout']._options = None
 # @@protoc_insertion_point(module_scope)

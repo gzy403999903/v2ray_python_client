@@ -7,7 +7,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -19,6 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/app/log/command/config.proto',
   package='v2ray.core.app.log.command',
   syntax='proto3',
+  serialized_options=_b('\n\036com.v2ray.core.app.log.commandP\001Z\007command\252\002\032V2Ray.Core.App.Log.Command'),
   serialized_pb=_b('\n+v2ray.com/core/app/log/command/config.proto\x12\x1av2ray.core.app.log.command\"\x08\n\x06\x43onfig\"\x16\n\x14RestartLoggerRequest\"\x17\n\x15RestartLoggerResponse2\x87\x01\n\rLoggerService\x12v\n\rRestartLogger\x12\x30.v2ray.core.app.log.command.RestartLoggerRequest\x1a\x31.v2ray.core.app.log.command.RestartLoggerResponse\"\x00\x42H\n\x1e\x63om.v2ray.core.app.log.commandP\x01Z\x07\x63ommand\xaa\x02\x1aV2Ray.Core.App.Log.Commandb\x06proto3')
 )
 
@@ -38,7 +38,7 @@ _CONFIG = _descriptor.Descriptor(
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -62,7 +62,7 @@ _RESTARTLOGGERREQUEST = _descriptor.Descriptor(
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -86,7 +86,7 @@ _RESTARTLOGGERRESPONSE = _descriptor.Descriptor(
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -123,15 +123,14 @@ RestartLoggerResponse = _reflection.GeneratedProtocolMessageType('RestartLoggerR
 _sym_db.RegisterMessage(RestartLoggerResponse)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n\036com.v2ray.core.app.log.commandP\001Z\007command\252\002\032V2Ray.Core.App.Log.Command'))
+DESCRIPTOR._options = None
 
 _LOGGERSERVICE = _descriptor.ServiceDescriptor(
   name='LoggerService',
   full_name='v2ray.core.app.log.command.LoggerService',
   file=DESCRIPTOR,
   index=0,
-  options=None,
+  serialized_options=None,
   serialized_start=135,
   serialized_end=270,
   methods=[
@@ -142,7 +141,7 @@ _LOGGERSERVICE = _descriptor.ServiceDescriptor(
     containing_service=None,
     input_type=_RESTARTLOGGERREQUEST,
     output_type=_RESTARTLOGGERRESPONSE,
-    options=None,
+    serialized_options=None,
   ),
 ])
 _sym_db.RegisterServiceDescriptor(_LOGGERSERVICE)

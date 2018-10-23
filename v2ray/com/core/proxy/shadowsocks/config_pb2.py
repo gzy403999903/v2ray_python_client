@@ -8,7 +8,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -23,6 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/proxy/shadowsocks/config.proto',
   package='v2ray.core.proxy.shadowsocks',
   syntax='proto3',
+  serialized_options=_b('\n com.v2ray.core.proxy.shadowsocksP\001Z\013shadowsocks\252\002\034V2Ray.Core.Proxy.Shadowsocks'),
   serialized_pb=_b('\n-v2ray.com/core/proxy/shadowsocks/config.proto\x12\x1cv2ray.core.proxy.shadowsocks\x1a\'v2ray.com/core/common/net/network.proto\x1a)v2ray.com/core/common/protocol/user.proto\x1a\x30v2ray.com/core/common/protocol/server_spec.proto\"\xce\x01\n\x07\x41\x63\x63ount\x12\x10\n\x08password\x18\x01 \x01(\t\x12=\n\x0b\x63ipher_type\x18\x02 \x01(\x0e\x32(.v2ray.core.proxy.shadowsocks.CipherType\x12>\n\x03ota\x18\x03 \x01(\x0e\x32\x31.v2ray.core.proxy.shadowsocks.Account.OneTimeAuth\"2\n\x0bOneTimeAuth\x12\x08\n\x04\x41uto\x10\x00\x12\x0c\n\x08\x44isabled\x10\x01\x12\x0b\n\x07\x45nabled\x10\x02\"\x88\x01\n\x0cServerConfig\x12\x17\n\x0budp_enabled\x18\x01 \x01(\x08\x42\x02\x18\x01\x12.\n\x04user\x18\x02 \x01(\x0b\x32 .v2ray.core.common.protocol.User\x12/\n\x07network\x18\x03 \x03(\x0e\x32\x1e.v2ray.core.common.net.Network\"J\n\x0c\x43lientConfig\x12:\n\x06server\x18\x01 \x03(\x0b\x32*.v2ray.core.common.protocol.ServerEndpoint*\x9f\x01\n\nCipherType\x12\x0b\n\x07UNKNOWN\x10\x00\x12\x0f\n\x0b\x41\x45S_128_CFB\x10\x01\x12\x0f\n\x0b\x41\x45S_256_CFB\x10\x02\x12\x0c\n\x08\x43HACHA20\x10\x03\x12\x11\n\rCHACHA20_IETF\x10\x04\x12\x0f\n\x0b\x41\x45S_128_GCM\x10\x05\x12\x0f\n\x0b\x41\x45S_256_GCM\x10\x06\x12\x15\n\x11\x43HACHA20_POLY1305\x10\x07\x12\x08\n\x04NONE\x10\x08\x42P\n com.v2ray.core.proxy.shadowsocksP\x01Z\x0bshadowsocks\xaa\x02\x1cV2Ray.Core.Proxy.Shadowsocksb\x06proto3')
   ,
   dependencies=[v2ray_dot_com_dot_core_dot_common_dot_net_dot_network__pb2.DESCRIPTOR,v2ray_dot_com_dot_core_dot_common_dot_protocol_dot_user__pb2.DESCRIPTOR,v2ray_dot_com_dot_core_dot_common_dot_protocol_dot_server__spec__pb2.DESCRIPTOR,])
@@ -35,43 +35,43 @@ _CIPHERTYPE = _descriptor.EnumDescriptor(
   values=[
     _descriptor.EnumValueDescriptor(
       name='UNKNOWN', index=0, number=0,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='AES_128_CFB', index=1, number=1,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='AES_256_CFB', index=2, number=2,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='CHACHA20', index=3, number=3,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='CHACHA20_IETF', index=4, number=4,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='AES_128_GCM', index=5, number=5,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='AES_256_GCM', index=6, number=6,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='CHACHA20_POLY1305', index=7, number=7,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='NONE', index=8, number=8,
-      options=None,
+      serialized_options=None,
       type=None),
   ],
   containing_type=None,
-  options=None,
+  serialized_options=None,
   serialized_start=638,
   serialized_end=797,
 )
@@ -97,19 +97,19 @@ _ACCOUNT_ONETIMEAUTH = _descriptor.EnumDescriptor(
   values=[
     _descriptor.EnumValueDescriptor(
       name='Auto', index=0, number=0,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='Disabled', index=1, number=1,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='Enabled', index=2, number=2,
-      options=None,
+      serialized_options=None,
       type=None),
   ],
   containing_type=None,
-  options=None,
+  serialized_options=None,
   serialized_start=370,
   serialized_end=420,
 )
@@ -129,21 +129,21 @@ _ACCOUNT = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='cipher_type', full_name='v2ray.core.proxy.shadowsocks.Account.cipher_type', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='ota', full_name='v2ray.core.proxy.shadowsocks.Account.ota', index=2,
       number=3, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -151,7 +151,7 @@ _ACCOUNT = _descriptor.Descriptor(
   enum_types=[
     _ACCOUNT_ONETIMEAUTH,
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -175,28 +175,28 @@ _SERVERCONFIG = _descriptor.Descriptor(
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=_descriptor._ParseOptions(descriptor_pb2.FieldOptions(), _b('\030\001')), file=DESCRIPTOR),
+      serialized_options=_b('\030\001'), file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='user', full_name='v2ray.core.proxy.shadowsocks.ServerConfig.user', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='network', full_name='v2ray.core.proxy.shadowsocks.ServerConfig.network', index=2,
       number=3, type=14, cpp_type=8, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -220,14 +220,14 @@ _CLIENTCONFIG = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -271,8 +271,6 @@ ClientConfig = _reflection.GeneratedProtocolMessageType('ClientConfig', (_messag
 _sym_db.RegisterMessage(ClientConfig)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n com.v2ray.core.proxy.shadowsocksP\001Z\013shadowsocks\252\002\034V2Ray.Core.Proxy.Shadowsocks'))
-_SERVERCONFIG.fields_by_name['udp_enabled'].has_options = True
-_SERVERCONFIG.fields_by_name['udp_enabled']._options = _descriptor._ParseOptions(descriptor_pb2.FieldOptions(), _b('\030\001'))
+DESCRIPTOR._options = None
+_SERVERCONFIG.fields_by_name['udp_enabled']._options = None
 # @@protoc_insertion_point(module_scope)
