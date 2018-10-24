@@ -7,7 +7,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -20,6 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/proxy/vmess/account.proto',
   package='v2ray.core.proxy.vmess',
   syntax='proto3',
+  serialized_options=_b('\n\032com.v2ray.core.proxy.vmessP\001Z\005vmess\252\002\026V2Ray.Core.Proxy.Vmess'),
   serialized_pb=_b('\n(v2ray.com/core/proxy/vmess/account.proto\x12\x16v2ray.core.proxy.vmess\x1a,v2ray.com/core/common/protocol/headers.proto\"n\n\x07\x41\x63\x63ount\x12\n\n\x02id\x18\x01 \x01(\t\x12\x10\n\x08\x61lter_id\x18\x02 \x01(\r\x12\x45\n\x11security_settings\x18\x03 \x01(\x0b\x32*.v2ray.core.common.protocol.SecurityConfigB>\n\x1a\x63om.v2ray.core.proxy.vmessP\x01Z\x05vmess\xaa\x02\x16V2Ray.Core.Proxy.Vmessb\x06proto3')
   ,
   dependencies=[v2ray_dot_com_dot_core_dot_common_dot_protocol_dot_headers__pb2.DESCRIPTOR,])
@@ -40,28 +40,28 @@ _ACCOUNT = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='alter_id', full_name='v2ray.core.proxy.vmess.Account.alter_id', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='security_settings', full_name='v2ray.core.proxy.vmess.Account.security_settings', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -83,6 +83,5 @@ Account = _reflection.GeneratedProtocolMessageType('Account', (_message.Message,
 _sym_db.RegisterMessage(Account)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n\032com.v2ray.core.proxy.vmessP\001Z\005vmess\252\002\026V2Ray.Core.Proxy.Vmess'))
+DESCRIPTOR._options = None
 # @@protoc_insertion_point(module_scope)

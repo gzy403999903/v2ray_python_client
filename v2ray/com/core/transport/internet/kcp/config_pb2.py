@@ -7,7 +7,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -20,6 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/transport/internet/kcp/config.proto',
   package='v2ray.core.transport.internet.kcp',
   syntax='proto3',
+  serialized_options=_b('\n%com.v2ray.core.transport.internet.kcpP\001Z\003kcp\252\002!V2Ray.Core.Transport.Internet.Kcp'),
   serialized_pb=_b('\n2v2ray.com/core/transport/internet/kcp/config.proto\x12!v2ray.core.transport.internet.kcp\x1a\x30v2ray.com/core/common/serial/typed_message.proto\"\x14\n\x03MTU\x12\r\n\x05value\x18\x01 \x01(\r\"\x14\n\x03TTI\x12\r\n\x05value\x18\x01 \x01(\r\"\x1f\n\x0eUplinkCapacity\x12\r\n\x05value\x18\x01 \x01(\r\"!\n\x10\x44ownlinkCapacity\x12\r\n\x05value\x18\x01 \x01(\r\"\x1b\n\x0bWriteBuffer\x12\x0c\n\x04size\x18\x01 \x01(\r\"\x1a\n\nReadBuffer\x12\x0c\n\x04size\x18\x01 \x01(\r\"!\n\x0f\x43onnectionReuse\x12\x0e\n\x06\x65nable\x18\x01 \x01(\x08\"\xf1\x03\n\x06\x43onfig\x12\x33\n\x03mtu\x18\x01 \x01(\x0b\x32&.v2ray.core.transport.internet.kcp.MTU\x12\x33\n\x03tti\x18\x02 \x01(\x0b\x32&.v2ray.core.transport.internet.kcp.TTI\x12J\n\x0fuplink_capacity\x18\x03 \x01(\x0b\x32\x31.v2ray.core.transport.internet.kcp.UplinkCapacity\x12N\n\x11\x64ownlink_capacity\x18\x04 \x01(\x0b\x32\x33.v2ray.core.transport.internet.kcp.DownlinkCapacity\x12\x12\n\ncongestion\x18\x05 \x01(\x08\x12\x44\n\x0cwrite_buffer\x18\x06 \x01(\x0b\x32..v2ray.core.transport.internet.kcp.WriteBuffer\x12\x42\n\x0bread_buffer\x18\x07 \x01(\x0b\x32-.v2ray.core.transport.internet.kcp.ReadBuffer\x12=\n\rheader_config\x18\x08 \x01(\x0b\x32&.v2ray.core.common.serial.TypedMessageJ\x04\x08\t\x10\nBR\n%com.v2ray.core.transport.internet.kcpP\x01Z\x03kcp\xaa\x02!V2Ray.Core.Transport.Internet.Kcpb\x06proto3')
   ,
   dependencies=[v2ray_dot_com_dot_core_dot_common_dot_serial_dot_typed__message__pb2.DESCRIPTOR,])
@@ -40,14 +40,14 @@ _MTU = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -71,14 +71,14 @@ _TTI = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -102,14 +102,14 @@ _UPLINKCAPACITY = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -133,14 +133,14 @@ _DOWNLINKCAPACITY = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -164,14 +164,14 @@ _WRITEBUFFER = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -195,14 +195,14 @@ _READBUFFER = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -226,14 +226,14 @@ _CONNECTIONREUSE = _descriptor.Descriptor(
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -257,63 +257,63 @@ _CONFIG = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='tti', full_name='v2ray.core.transport.internet.kcp.Config.tti', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='uplink_capacity', full_name='v2ray.core.transport.internet.kcp.Config.uplink_capacity', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='downlink_capacity', full_name='v2ray.core.transport.internet.kcp.Config.downlink_capacity', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='congestion', full_name='v2ray.core.transport.internet.kcp.Config.congestion', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='write_buffer', full_name='v2ray.core.transport.internet.kcp.Config.write_buffer', index=5,
       number=6, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='read_buffer', full_name='v2ray.core.transport.internet.kcp.Config.read_buffer', index=6,
       number=7, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='header_config', full_name='v2ray.core.transport.internet.kcp.Config.header_config', index=7,
       number=8, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -397,6 +397,5 @@ Config = _reflection.GeneratedProtocolMessageType('Config', (_message.Message,),
 _sym_db.RegisterMessage(Config)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n%com.v2ray.core.transport.internet.kcpP\001Z\003kcp\252\002!V2Ray.Core.Transport.Internet.Kcp'))
+DESCRIPTOR._options = None
 # @@protoc_insertion_point(module_scope)

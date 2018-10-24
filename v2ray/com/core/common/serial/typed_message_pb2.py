@@ -7,7 +7,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -19,6 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/common/serial/typed_message.proto',
   package='v2ray.core.common.serial',
   syntax='proto3',
+  serialized_options=_b('\n\034com.v2ray.core.common.serialP\001Z\006serial\252\002\030V2Ray.Core.Common.Serial'),
   serialized_pb=_b('\n0v2ray.com/core/common/serial/typed_message.proto\x12\x18v2ray.core.common.serial\"+\n\x0cTypedMessage\x12\x0c\n\x04type\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x0c\x42\x43\n\x1c\x63om.v2ray.core.common.serialP\x01Z\x06serial\xaa\x02\x18V2Ray.Core.Common.Serialb\x06proto3')
 )
 
@@ -38,21 +38,21 @@ _TYPEDMESSAGE = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='value', full_name='v2ray.core.common.serial.TypedMessage.value', index=1,
       number=2, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -73,6 +73,5 @@ TypedMessage = _reflection.GeneratedProtocolMessageType('TypedMessage', (_messag
 _sym_db.RegisterMessage(TypedMessage)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n\034com.v2ray.core.common.serialP\001Z\006serial\252\002\030V2Ray.Core.Common.Serial'))
+DESCRIPTOR._options = None
 # @@protoc_insertion_point(module_scope)

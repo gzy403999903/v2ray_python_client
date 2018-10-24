@@ -7,7 +7,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -21,6 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/common/protocol/server_spec.proto',
   package='v2ray.core.common.protocol',
   syntax='proto3',
+  serialized_options=_b('\n\036com.v2ray.core.common.protocolP\001Z\010protocol\252\002\032V2Ray.Core.Common.Protocol'),
   serialized_pb=_b('\n0v2ray.com/core/common/protocol/server_spec.proto\x12\x1av2ray.core.common.protocol\x1a\'v2ray.com/core/common/net/address.proto\x1a)v2ray.com/core/common/protocol/user.proto\"\x82\x01\n\x0eServerEndpoint\x12\x32\n\x07\x61\x64\x64ress\x18\x01 \x01(\x0b\x32!.v2ray.core.common.net.IPOrDomain\x12\x0c\n\x04port\x18\x02 \x01(\r\x12.\n\x04user\x18\x03 \x03(\x0b\x32 .v2ray.core.common.protocol.UserBI\n\x1e\x63om.v2ray.core.common.protocolP\x01Z\x08protocol\xaa\x02\x1aV2Ray.Core.Common.Protocolb\x06proto3')
   ,
   dependencies=[v2ray_dot_com_dot_core_dot_common_dot_net_dot_address__pb2.DESCRIPTOR,v2ray_dot_com_dot_core_dot_common_dot_protocol_dot_user__pb2.DESCRIPTOR,])
@@ -41,28 +41,28 @@ _SERVERENDPOINT = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='port', full_name='v2ray.core.common.protocol.ServerEndpoint.port', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='user', full_name='v2ray.core.common.protocol.ServerEndpoint.user', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -85,6 +85,5 @@ ServerEndpoint = _reflection.GeneratedProtocolMessageType('ServerEndpoint', (_me
 _sym_db.RegisterMessage(ServerEndpoint)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n\036com.v2ray.core.common.protocolP\001Z\010protocol\252\002\032V2Ray.Core.Common.Protocol'))
+DESCRIPTOR._options = None
 # @@protoc_insertion_point(module_scope)

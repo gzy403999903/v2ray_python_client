@@ -7,7 +7,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -22,6 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/app/proxyman/command/command.proto',
   package='v2ray.core.app.proxyman.command',
   syntax='proto3',
+  serialized_options=_b('\n#com.v2ray.core.app.proxyman.commandP\001Z\007command\252\002\037V2Ray.Core.App.Proxyman.Command'),
   serialized_pb=_b('\n1v2ray.com/core/app/proxyman/command/command.proto\x12\x1fv2ray.core.app.proxyman.command\x1a)v2ray.com/core/common/protocol/user.proto\x1a\x30v2ray.com/core/common/serial/typed_message.proto\x1a\x1bv2ray.com/core/config.proto\"B\n\x10\x41\x64\x64UserOperation\x12.\n\x04user\x18\x01 \x01(\x0b\x32 .v2ray.core.common.protocol.User\"$\n\x13RemoveUserOperation\x12\r\n\x05\x65mail\x18\x01 \x01(\t\"F\n\x11\x41\x64\x64InboundRequest\x12\x31\n\x07inbound\x18\x01 \x01(\x0b\x32 .v2ray.core.InboundHandlerConfig\"\x14\n\x12\x41\x64\x64InboundResponse\"#\n\x14RemoveInboundRequest\x12\x0b\n\x03tag\x18\x01 \x01(\t\"\x17\n\x15RemoveInboundResponse\"]\n\x13\x41lterInboundRequest\x12\x0b\n\x03tag\x18\x01 \x01(\t\x12\x39\n\toperation\x18\x02 \x01(\x0b\x32&.v2ray.core.common.serial.TypedMessage\"\x16\n\x14\x41lterInboundResponse\"I\n\x12\x41\x64\x64OutboundRequest\x12\x33\n\x08outbound\x18\x01 \x01(\x0b\x32!.v2ray.core.OutboundHandlerConfig\"\x15\n\x13\x41\x64\x64OutboundResponse\"$\n\x15RemoveOutboundRequest\x12\x0b\n\x03tag\x18\x01 \x01(\t\"\x18\n\x16RemoveOutboundResponse\"^\n\x14\x41lterOutboundRequest\x12\x0b\n\x03tag\x18\x01 \x01(\t\x12\x39\n\toperation\x18\x02 \x01(\x0b\x32&.v2ray.core.common.serial.TypedMessage\"\x17\n\x15\x41lterOutboundResponse\"\x08\n\x06\x43onfig2\x90\x06\n\x0eHandlerService\x12w\n\nAddInbound\x12\x32.v2ray.core.app.proxyman.command.AddInboundRequest\x1a\x33.v2ray.core.app.proxyman.command.AddInboundResponse\"\x00\x12\x80\x01\n\rRemoveInbound\x12\x35.v2ray.core.app.proxyman.command.RemoveInboundRequest\x1a\x36.v2ray.core.app.proxyman.command.RemoveInboundResponse\"\x00\x12}\n\x0c\x41lterInbound\x12\x34.v2ray.core.app.proxyman.command.AlterInboundRequest\x1a\x35.v2ray.core.app.proxyman.command.AlterInboundResponse\"\x00\x12z\n\x0b\x41\x64\x64Outbound\x12\x33.v2ray.core.app.proxyman.command.AddOutboundRequest\x1a\x34.v2ray.core.app.proxyman.command.AddOutboundResponse\"\x00\x12\x83\x01\n\x0eRemoveOutbound\x12\x36.v2ray.core.app.proxyman.command.RemoveOutboundRequest\x1a\x37.v2ray.core.app.proxyman.command.RemoveOutboundResponse\"\x00\x12\x80\x01\n\rAlterOutbound\x12\x35.v2ray.core.app.proxyman.command.AlterOutboundRequest\x1a\x36.v2ray.core.app.proxyman.command.AlterOutboundResponse\"\x00\x42R\n#com.v2ray.core.app.proxyman.commandP\x01Z\x07\x63ommand\xaa\x02\x1fV2Ray.Core.App.Proxyman.Commandb\x06proto3')
   ,
   dependencies=[v2ray_dot_com_dot_core_dot_common_dot_protocol_dot_user__pb2.DESCRIPTOR,v2ray_dot_com_dot_core_dot_common_dot_serial_dot_typed__message__pb2.DESCRIPTOR,v2ray_dot_com_dot_core_dot_config__pb2.DESCRIPTOR,])
@@ -42,14 +42,14 @@ _ADDUSEROPERATION = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -73,14 +73,14 @@ _REMOVEUSEROPERATION = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -104,14 +104,14 @@ _ADDINBOUNDREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -135,7 +135,7 @@ _ADDINBOUNDRESPONSE = _descriptor.Descriptor(
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -159,14 +159,14 @@ _REMOVEINBOUNDREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -190,7 +190,7 @@ _REMOVEINBOUNDRESPONSE = _descriptor.Descriptor(
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -214,21 +214,21 @@ _ALTERINBOUNDREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='operation', full_name='v2ray.core.app.proxyman.command.AlterInboundRequest.operation', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -252,7 +252,7 @@ _ALTERINBOUNDRESPONSE = _descriptor.Descriptor(
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -276,14 +276,14 @@ _ADDOUTBOUNDREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -307,7 +307,7 @@ _ADDOUTBOUNDRESPONSE = _descriptor.Descriptor(
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -331,14 +331,14 @@ _REMOVEOUTBOUNDREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -362,7 +362,7 @@ _REMOVEOUTBOUNDRESPONSE = _descriptor.Descriptor(
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -386,21 +386,21 @@ _ALTEROUTBOUNDREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='operation', full_name='v2ray.core.app.proxyman.command.AlterOutboundRequest.operation', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -424,7 +424,7 @@ _ALTEROUTBOUNDRESPONSE = _descriptor.Descriptor(
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -448,7 +448,7 @@ _CONFIG = _descriptor.Descriptor(
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -586,15 +586,14 @@ Config = _reflection.GeneratedProtocolMessageType('Config', (_message.Message,),
 _sym_db.RegisterMessage(Config)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n#com.v2ray.core.app.proxyman.commandP\001Z\007command\252\002\037V2Ray.Core.App.Proxyman.Command'))
+DESCRIPTOR._options = None
 
 _HANDLERSERVICE = _descriptor.ServiceDescriptor(
   name='HandlerService',
   full_name='v2ray.core.app.proxyman.command.HandlerService',
   file=DESCRIPTOR,
   index=0,
-  options=None,
+  serialized_options=None,
   serialized_start=883,
   serialized_end=1667,
   methods=[
@@ -605,7 +604,7 @@ _HANDLERSERVICE = _descriptor.ServiceDescriptor(
     containing_service=None,
     input_type=_ADDINBOUNDREQUEST,
     output_type=_ADDINBOUNDRESPONSE,
-    options=None,
+    serialized_options=None,
   ),
   _descriptor.MethodDescriptor(
     name='RemoveInbound',
@@ -614,7 +613,7 @@ _HANDLERSERVICE = _descriptor.ServiceDescriptor(
     containing_service=None,
     input_type=_REMOVEINBOUNDREQUEST,
     output_type=_REMOVEINBOUNDRESPONSE,
-    options=None,
+    serialized_options=None,
   ),
   _descriptor.MethodDescriptor(
     name='AlterInbound',
@@ -623,7 +622,7 @@ _HANDLERSERVICE = _descriptor.ServiceDescriptor(
     containing_service=None,
     input_type=_ALTERINBOUNDREQUEST,
     output_type=_ALTERINBOUNDRESPONSE,
-    options=None,
+    serialized_options=None,
   ),
   _descriptor.MethodDescriptor(
     name='AddOutbound',
@@ -632,7 +631,7 @@ _HANDLERSERVICE = _descriptor.ServiceDescriptor(
     containing_service=None,
     input_type=_ADDOUTBOUNDREQUEST,
     output_type=_ADDOUTBOUNDRESPONSE,
-    options=None,
+    serialized_options=None,
   ),
   _descriptor.MethodDescriptor(
     name='RemoveOutbound',
@@ -641,7 +640,7 @@ _HANDLERSERVICE = _descriptor.ServiceDescriptor(
     containing_service=None,
     input_type=_REMOVEOUTBOUNDREQUEST,
     output_type=_REMOVEOUTBOUNDRESPONSE,
-    options=None,
+    serialized_options=None,
   ),
   _descriptor.MethodDescriptor(
     name='AlterOutbound',
@@ -650,7 +649,7 @@ _HANDLERSERVICE = _descriptor.ServiceDescriptor(
     containing_service=None,
     input_type=_ALTEROUTBOUNDREQUEST,
     output_type=_ALTEROUTBOUNDRESPONSE,
-    options=None,
+    serialized_options=None,
   ),
 ])
 _sym_db.RegisterServiceDescriptor(_HANDLERSERVICE)

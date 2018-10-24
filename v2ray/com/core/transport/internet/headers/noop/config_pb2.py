@@ -7,7 +7,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -19,6 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/transport/internet/headers/noop/config.proto',
   package='v2ray.core.transport.internet.headers.noop',
   syntax='proto3',
+  serialized_options=_b('\n.com.v2ray.core.transport.internet.headers.noopP\001Z\004noop\252\002*V2Ray.Core.Transport.Internet.Headers.Noop'),
   serialized_pb=_b('\n;v2ray.com/core/transport/internet/headers/noop/config.proto\x12*v2ray.core.transport.internet.headers.noop\"\x08\n\x06\x43onfig\"\x12\n\x10\x43onnectionConfigBe\n.com.v2ray.core.transport.internet.headers.noopP\x01Z\x04noop\xaa\x02*V2Ray.Core.Transport.Internet.Headers.Noopb\x06proto3')
 )
 
@@ -38,7 +38,7 @@ _CONFIG = _descriptor.Descriptor(
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -62,7 +62,7 @@ _CONNECTIONCONFIG = _descriptor.Descriptor(
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -91,6 +91,5 @@ ConnectionConfig = _reflection.GeneratedProtocolMessageType('ConnectionConfig', 
 _sym_db.RegisterMessage(ConnectionConfig)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n.com.v2ray.core.transport.internet.headers.noopP\001Z\004noop\252\002*V2Ray.Core.Transport.Internet.Headers.Noop'))
+DESCRIPTOR._options = None
 # @@protoc_insertion_point(module_scope)

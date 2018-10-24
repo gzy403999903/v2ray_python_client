@@ -7,7 +7,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -20,6 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/proxy/blackhole/config.proto',
   package='v2ray.core.proxy.blackhole',
   syntax='proto3',
+  serialized_options=_b('\n\036com.v2ray.core.proxy.blackholeP\001Z\tblackhole\252\002\032V2Ray.Core.Proxy.Blackhole'),
   serialized_pb=_b('\n+v2ray.com/core/proxy/blackhole/config.proto\x12\x1av2ray.core.proxy.blackhole\x1a\x30v2ray.com/core/common/serial/typed_message.proto\"\x0e\n\x0cNoneResponse\"\x0e\n\x0cHTTPResponse\"B\n\x06\x43onfig\x12\x38\n\x08response\x18\x01 \x01(\x0b\x32&.v2ray.core.common.serial.TypedMessageBJ\n\x1e\x63om.v2ray.core.proxy.blackholeP\x01Z\tblackhole\xaa\x02\x1aV2Ray.Core.Proxy.Blackholeb\x06proto3')
   ,
   dependencies=[v2ray_dot_com_dot_core_dot_common_dot_serial_dot_typed__message__pb2.DESCRIPTOR,])
@@ -40,7 +40,7 @@ _NONERESPONSE = _descriptor.Descriptor(
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -64,7 +64,7 @@ _HTTPRESPONSE = _descriptor.Descriptor(
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -88,14 +88,14 @@ _CONFIG = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -133,6 +133,5 @@ Config = _reflection.GeneratedProtocolMessageType('Config', (_message.Message,),
 _sym_db.RegisterMessage(Config)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n\036com.v2ray.core.proxy.blackholeP\001Z\tblackhole\252\002\032V2Ray.Core.Proxy.Blackhole'))
+DESCRIPTOR._options = None
 # @@protoc_insertion_point(module_scope)

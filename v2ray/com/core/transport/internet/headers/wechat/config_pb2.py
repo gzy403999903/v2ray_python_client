@@ -7,7 +7,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -19,6 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/transport/internet/headers/wechat/config.proto',
   package='v2ray.core.transport.internet.headers.wechat',
   syntax='proto3',
+  serialized_options=_b('\n0com.v2ray.core.transport.internet.headers.wechatP\001Z\006wechat\252\002,V2Ray.Core.Transport.Internet.Headers.Wechat'),
   serialized_pb=_b('\n=v2ray.com/core/transport/internet/headers/wechat/config.proto\x12,v2ray.core.transport.internet.headers.wechat\"\r\n\x0bVideoConfigBk\n0com.v2ray.core.transport.internet.headers.wechatP\x01Z\x06wechat\xaa\x02,V2Ray.Core.Transport.Internet.Headers.Wechatb\x06proto3')
 )
 
@@ -38,7 +38,7 @@ _VIDEOCONFIG = _descriptor.Descriptor(
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -59,6 +59,5 @@ VideoConfig = _reflection.GeneratedProtocolMessageType('VideoConfig', (_message.
 _sym_db.RegisterMessage(VideoConfig)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n0com.v2ray.core.transport.internet.headers.wechatP\001Z\006wechat\252\002,V2Ray.Core.Transport.Internet.Headers.Wechat'))
+DESCRIPTOR._options = None
 # @@protoc_insertion_point(module_scope)

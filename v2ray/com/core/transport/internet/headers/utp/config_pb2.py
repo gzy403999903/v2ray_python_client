@@ -7,7 +7,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -19,6 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='v2ray.com/core/transport/internet/headers/utp/config.proto',
   package='v2ray.core.transport.internet.headers.utp',
   syntax='proto3',
+  serialized_options=_b('\n-com.v2ray.core.transport.internet.headers.utpP\001Z\003utp\252\002)V2Ray.Core.Transport.Internet.Headers.Utp'),
   serialized_pb=_b('\n:v2ray.com/core/transport/internet/headers/utp/config.proto\x12)v2ray.core.transport.internet.headers.utp\"\x19\n\x06\x43onfig\x12\x0f\n\x07version\x18\x01 \x01(\rBb\n-com.v2ray.core.transport.internet.headers.utpP\x01Z\x03utp\xaa\x02)V2Ray.Core.Transport.Internet.Headers.Utpb\x06proto3')
 )
 
@@ -38,14 +38,14 @@ _CONFIG = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
@@ -66,6 +66,5 @@ Config = _reflection.GeneratedProtocolMessageType('Config', (_message.Message,),
 _sym_db.RegisterMessage(Config)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n-com.v2ray.core.transport.internet.headers.utpP\001Z\003utp\252\002)V2Ray.Core.Transport.Internet.Headers.Utp'))
+DESCRIPTOR._options = None
 # @@protoc_insertion_point(module_scope)

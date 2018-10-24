@@ -66,7 +66,7 @@ def remove_user(email):
         command_pb2.AlterInboundRequest(
             tag=INBOUND_TAG,
             operation=typed_message_pb2.TypedMessage(
-                type=command_pb2._ADDUSEROPERATION.full_name,
+                type=command_pb2._REMOVEUSEROPERATION.full_name,
                 value=command_pb2.RemoveUserOperation(
                     email=email
                 ).SerializeToString()
