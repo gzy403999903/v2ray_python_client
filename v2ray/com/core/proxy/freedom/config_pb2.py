@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='v2ray.core.proxy.freedom',
   syntax='proto3',
   serialized_options=_b('\n\034com.v2ray.core.proxy.freedomP\001Z\007freedom\252\002\030V2Ray.Core.Proxy.Freedom'),
-  serialized_pb=_b('\n)v2ray.com/core/proxy/freedom/config.proto\x12\x18v2ray.core.proxy.freedom\x1a\x30v2ray.com/core/common/protocol/server_spec.proto\"Q\n\x13\x44\x65stinationOverride\x12:\n\x06server\x18\x01 \x01(\x0b\x32*.v2ray.core.common.protocol.ServerEndpoint\"\xf1\x01\n\x06\x43onfig\x12H\n\x0f\x64omain_strategy\x18\x01 \x01(\x0e\x32/.v2ray.core.proxy.freedom.Config.DomainStrategy\x12\x13\n\x07timeout\x18\x02 \x01(\rB\x02\x18\x01\x12K\n\x14\x64\x65stination_override\x18\x03 \x01(\x0b\x32-.v2ray.core.proxy.freedom.DestinationOverride\x12\x12\n\nuser_level\x18\x04 \x01(\r\"\'\n\x0e\x44omainStrategy\x12\t\n\x05\x41S_IS\x10\x00\x12\n\n\x06USE_IP\x10\x01\x42\x44\n\x1c\x63om.v2ray.core.proxy.freedomP\x01Z\x07\x66reedom\xaa\x02\x18V2Ray.Core.Proxy.Freedomb\x06proto3')
+  serialized_pb=_b('\n)v2ray.com/core/proxy/freedom/config.proto\x12\x18v2ray.core.proxy.freedom\x1a\x30v2ray.com/core/common/protocol/server_spec.proto\"Q\n\x13\x44\x65stinationOverride\x12:\n\x06server\x18\x01 \x01(\x0b\x32*.v2ray.core.common.protocol.ServerEndpoint\"\x8b\x02\n\x06\x43onfig\x12H\n\x0f\x64omain_strategy\x18\x01 \x01(\x0e\x32/.v2ray.core.proxy.freedom.Config.DomainStrategy\x12\x13\n\x07timeout\x18\x02 \x01(\rB\x02\x18\x01\x12K\n\x14\x64\x65stination_override\x18\x03 \x01(\x0b\x32-.v2ray.core.proxy.freedom.DestinationOverride\x12\x12\n\nuser_level\x18\x04 \x01(\r\"A\n\x0e\x44omainStrategy\x12\t\n\x05\x41S_IS\x10\x00\x12\n\n\x06USE_IP\x10\x01\x12\x0b\n\x07USE_IP4\x10\x02\x12\x0b\n\x07USE_IP6\x10\x03\x42\x44\n\x1c\x63om.v2ray.core.proxy.freedomP\x01Z\x07\x66reedom\xaa\x02\x18V2Ray.Core.Proxy.Freedomb\x06proto3')
   ,
   dependencies=[v2ray_dot_com_dot_core_dot_common_dot_protocol_dot_server__spec__pb2.DESCRIPTOR,])
 
@@ -40,11 +40,19 @@ _CONFIG_DOMAINSTRATEGY = _descriptor.EnumDescriptor(
       name='USE_IP', index=1, number=1,
       serialized_options=None,
       type=None),
+    _descriptor.EnumValueDescriptor(
+      name='USE_IP4', index=2, number=2,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='USE_IP6', index=3, number=3,
+      serialized_options=None,
+      type=None),
   ],
   containing_type=None,
   serialized_options=None,
   serialized_start=407,
-  serialized_end=446,
+  serialized_end=472,
 )
 _sym_db.RegisterEnumDescriptor(_CONFIG_DOMAINSTRATEGY)
 
@@ -129,7 +137,7 @@ _CONFIG = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=205,
-  serialized_end=446,
+  serialized_end=472,
 )
 
 _DESTINATIONOVERRIDE.fields_by_name['server'].message_type = v2ray_dot_com_dot_core_dot_common_dot_protocol_dot_server__spec__pb2._SERVERENDPOINT

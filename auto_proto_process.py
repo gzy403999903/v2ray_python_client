@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-#coding: utf-8
 import uuid
 from bs4 import BeautifulSoup
 import requests
@@ -54,7 +52,8 @@ if is_version_higher(latest_version, local_tag):
             os.remove('source.zip')
 
         print('正在下载.....')
-        zip_request = requests.get('https://github.com/v2ray/v2ray-core/archive/master.zip')
+        zip_request = requests.get(
+            'https://github.com/v2ray/v2ray-core/archive/master.zip')
         source_zip = open('source.zip', mode='wb')
         source_zip.write(zip_request.content)
         azip = zipfile.ZipFile('source.zip')
@@ -62,7 +61,7 @@ if is_version_higher(latest_version, local_tag):
         azip.extractall()
         print('解压完成')
         azip.close()
-        c = os.system('python3 get_proto.py -d v2ray-core-master')
+        c = os.system('python get_proto.py -d v2ray-core-master')
         c.bit_length()
         shutil.rmtree('v2ray-core-master')
         cf.set('CONFIG', 'latest_version', latest_version)

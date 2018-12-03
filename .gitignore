@@ -1,3 +1,6 @@
 grpc_dir
 v2ray.com
+.idea
 
+/source.zip
+/v2ray-core-master/

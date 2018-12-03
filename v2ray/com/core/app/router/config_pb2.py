@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='v2ray.core.app.router',
   syntax='proto3',
   serialized_options=_b('\n\031com.v2ray.core.app.routerP\001Z\006router\252\002\025V2Ray.Core.App.Router'),
-  serialized_pb=_b('\n&v2ray.com/core/app/router/config.proto\x12\x15v2ray.core.app.router\x1a$v2ray.com/core/common/net/port.proto\x1a\'v2ray.com/core/common/net/network.proto\"}\n\x06\x44omain\x12\x30\n\x04type\x18\x01 \x01(\x0e\x32\".v2ray.core.app.router.Domain.Type\x12\r\n\x05value\x18\x02 \x01(\t\"2\n\x04Type\x12\t\n\x05Plain\x10\x00\x12\t\n\x05Regex\x10\x01\x12\n\n\x06\x44omain\x10\x02\x12\x08\n\x04\x46ull\x10\x03\"\"\n\x04\x43IDR\x12\n\n\x02ip\x18\x01 \x01(\x0c\x12\x0e\n\x06prefix\x18\x02 \x01(\r\"H\n\x05GeoIP\x12\x14\n\x0c\x63ountry_code\x18\x01 \x01(\t\x12)\n\x04\x63idr\x18\x02 \x03(\x0b\x32\x1b.v2ray.core.app.router.CIDR\"8\n\tGeoIPList\x12+\n\x05\x65ntry\x18\x01 \x03(\x0b\x32\x1c.v2ray.core.app.router.GeoIP\"N\n\x07GeoSite\x12\x14\n\x0c\x63ountry_code\x18\x01 \x01(\t\x12-\n\x06\x64omain\x18\x02 \x03(\x0b\x32\x1d.v2ray.core.app.router.Domain\"<\n\x0bGeoSiteList\x12-\n\x05\x65ntry\x18\x01 \x03(\x0b\x32\x1e.v2ray.core.app.router.GeoSite\"\xd1\x02\n\x0bRoutingRule\x12\x0b\n\x03tag\x18\x01 \x01(\t\x12-\n\x06\x64omain\x18\x02 \x03(\x0b\x32\x1d.v2ray.core.app.router.Domain\x12)\n\x04\x63idr\x18\x03 \x03(\x0b\x32\x1b.v2ray.core.app.router.CIDR\x12\x34\n\nport_range\x18\x04 \x01(\x0b\x32 .v2ray.core.common.net.PortRange\x12\x38\n\x0cnetwork_list\x18\x05 \x01(\x0b\x32\".v2ray.core.common.net.NetworkList\x12\x30\n\x0bsource_cidr\x18\x06 \x03(\x0b\x32\x1b.v2ray.core.app.router.CIDR\x12\x12\n\nuser_email\x18\x07 \x03(\t\x12\x13\n\x0binbound_tag\x18\x08 \x03(\t\x12\x10\n\x08protocol\x18\t \x03(\t\"\xca\x01\n\x06\x43onfig\x12\x45\n\x0f\x64omain_strategy\x18\x01 \x01(\x0e\x32,.v2ray.core.app.router.Config.DomainStrategy\x12\x30\n\x04rule\x18\x02 \x03(\x0b\x32\".v2ray.core.app.router.RoutingRule\"G\n\x0e\x44omainStrategy\x12\x08\n\x04\x41sIs\x10\x00\x12\t\n\x05UseIp\x10\x01\x12\x10\n\x0cIpIfNonMatch\x10\x02\x12\x0e\n\nIpOnDemand\x10\x03\x42=\n\x19\x63om.v2ray.core.app.routerP\x01Z\x06router\xaa\x02\x15V2Ray.Core.App.Routerb\x06proto3')
+  serialized_pb=_b('\n&v2ray.com/core/app/router/config.proto\x12\x15v2ray.core.app.router\x1a$v2ray.com/core/common/net/port.proto\x1a\'v2ray.com/core/common/net/network.proto\"\x8d\x02\n\x06\x44omain\x12\x30\n\x04type\x18\x01 \x01(\x0e\x32\".v2ray.core.app.router.Domain.Type\x12\r\n\x05value\x18\x02 \x01(\t\x12:\n\tattribute\x18\x03 \x03(\x0b\x32\'.v2ray.core.app.router.Domain.Attribute\x1aR\n\tAttribute\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x14\n\nbool_value\x18\x02 \x01(\x08H\x00\x12\x13\n\tint_value\x18\x03 \x01(\x03H\x00\x42\r\n\x0btyped_value\"2\n\x04Type\x12\t\n\x05Plain\x10\x00\x12\t\n\x05Regex\x10\x01\x12\n\n\x06\x44omain\x10\x02\x12\x08\n\x04\x46ull\x10\x03\"\"\n\x04\x43IDR\x12\n\n\x02ip\x18\x01 \x01(\x0c\x12\x0e\n\x06prefix\x18\x02 \x01(\r\"H\n\x05GeoIP\x12\x14\n\x0c\x63ountry_code\x18\x01 \x01(\t\x12)\n\x04\x63idr\x18\x02 \x03(\x0b\x32\x1b.v2ray.core.app.router.CIDR\"8\n\tGeoIPList\x12+\n\x05\x65ntry\x18\x01 \x03(\x0b\x32\x1c.v2ray.core.app.router.GeoIP\"N\n\x07GeoSite\x12\x14\n\x0c\x63ountry_code\x18\x01 \x01(\t\x12-\n\x06\x64omain\x18\x02 \x03(\x0b\x32\x1d.v2ray.core.app.router.Domain\"<\n\x0bGeoSiteList\x12-\n\x05\x65ntry\x18\x01 \x03(\x0b\x32\x1e.v2ray.core.app.router.GeoSite\"\x99\x04\n\x0bRoutingRule\x12\r\n\x03tag\x18\x01 \x01(\tH\x00\x12\x17\n\rbalancing_tag\x18\x0c \x01(\tH\x00\x12-\n\x06\x64omain\x18\x02 \x03(\x0b\x32\x1d.v2ray.core.app.router.Domain\x12-\n\x04\x63idr\x18\x03 \x03(\x0b\x32\x1b.v2ray.core.app.router.CIDRB\x02\x18\x01\x12+\n\x05geoip\x18\n \x03(\x0b\x32\x1c.v2ray.core.app.router.GeoIP\x12\x34\n\nport_range\x18\x04 \x01(\x0b\x32 .v2ray.core.common.net.PortRange\x12<\n\x0cnetwork_list\x18\x05 \x01(\x0b\x32\".v2ray.core.common.net.NetworkListB\x02\x18\x01\x12\x30\n\x08networks\x18\r \x03(\x0e\x32\x1e.v2ray.core.common.net.Network\x12\x34\n\x0bsource_cidr\x18\x06 \x03(\x0b\x32\x1b.v2ray.core.app.router.CIDRB\x02\x18\x01\x12\x32\n\x0csource_geoip\x18\x0b \x03(\x0b\x32\x1c.v2ray.core.app.router.GeoIP\x12\x12\n\nuser_email\x18\x07 \x03(\t\x12\x13\n\x0binbound_tag\x18\x08 \x03(\t\x12\x10\n\x08protocol\x18\t \x03(\tB\x0c\n\ntarget_tag\"7\n\rBalancingRule\x12\x0b\n\x03tag\x18\x01 \x01(\t\x12\x19\n\x11outbound_selector\x18\x02 \x03(\t\"\x88\x02\n\x06\x43onfig\x12\x45\n\x0f\x64omain_strategy\x18\x01 \x01(\x0e\x32,.v2ray.core.app.router.Config.DomainStrategy\x12\x30\n\x04rule\x18\x02 \x03(\x0b\x32\".v2ray.core.app.router.RoutingRule\x12<\n\x0e\x62\x61lancing_rule\x18\x03 \x03(\x0b\x32$.v2ray.core.app.router.BalancingRule\"G\n\x0e\x44omainStrategy\x12\x08\n\x04\x41sIs\x10\x00\x12\t\n\x05UseIp\x10\x01\x12\x10\n\x0cIpIfNonMatch\x10\x02\x12\x0e\n\nIpOnDemand\x10\x03\x42=\n\x19\x63om.v2ray.core.app.routerP\x01Z\x06router\xaa\x02\x15V2Ray.Core.App.Routerb\x06proto3')
   ,
   dependencies=[v2ray_dot_com_dot_core_dot_common_dot_net_dot_port__pb2.DESCRIPTOR,v2ray_dot_com_dot_core_dot_common_dot_net_dot_network__pb2.DESCRIPTOR,])
 
@@ -52,8 +52,8 @@ _DOMAIN_TYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=219,
-  serialized_end=269,
+  serialized_start=364,
+  serialized_end=414,
 )
 _sym_db.RegisterEnumDescriptor(_DOMAIN_TYPE)
 
@@ -82,11 +82,58 @@ _CONFIG_DOMAINSTRATEGY = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=1053,
-  serialized_end=1124,
+  serialized_start=1517,
+  serialized_end=1588,
 )
 _sym_db.RegisterEnumDescriptor(_CONFIG_DOMAINSTRATEGY)
 
+
+_DOMAIN_ATTRIBUTE = _descriptor.Descriptor(
+  name='Attribute',
+  full_name='v2ray.core.app.router.Domain.Attribute',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='key', full_name='v2ray.core.app.router.Domain.Attribute.key', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='bool_value', full_name='v2ray.core.app.router.Domain.Attribute.bool_value', index=1,
+      number=2, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='int_value', full_name='v2ray.core.app.router.Domain.Attribute.int_value', index=2,
+      number=3, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+    _descriptor.OneofDescriptor(
+      name='typed_value', full_name='v2ray.core.app.router.Domain.Attribute.typed_value',
+      index=0, containing_type=None, fields=[]),
+  ],
+  serialized_start=280,
+  serialized_end=362,
+)
 
 _DOMAIN = _descriptor.Descriptor(
   name='Domain',
@@ -109,10 +156,17 @@ _DOMAIN = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='attribute', full_name='v2ray.core.app.router.Domain.attribute', index=2,
+      number=3, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
-  nested_types=[],
+  nested_types=[_DOMAIN_ATTRIBUTE, ],
   enum_types=[
     _DOMAIN_TYPE,
   ],
@@ -122,8 +176,8 @@ _DOMAIN = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=144,
-  serialized_end=269,
+  serialized_start=145,
+  serialized_end=414,
 )
 
 
@@ -160,8 +214,8 @@ _CIDR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=271,
-  serialized_end=305,
+  serialized_start=416,
+  serialized_end=450,
 )
 
 
@@ -198,8 +252,8 @@ _GEOIP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=307,
-  serialized_end=379,
+  serialized_start=452,
+  serialized_end=524,
 )
 
 
@@ -229,8 +283,8 @@ _GEOIPLIST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=381,
-  serialized_end=437,
+  serialized_start=526,
+  serialized_end=582,
 )
 
 
@@ -267,8 +321,8 @@ _GEOSITE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=439,
-  serialized_end=517,
+  serialized_start=584,
+  serialized_end=662,
 )
 
 
@@ -298,8 +352,8 @@ _GEOSITELIST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=519,
-  serialized_end=579,
+  serialized_start=664,
+  serialized_end=724,
 )
 
 
@@ -318,56 +372,84 @@ _ROUTINGRULE = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='domain', full_name='v2ray.core.app.router.RoutingRule.domain', index=1,
+      name='balancing_tag', full_name='v2ray.core.app.router.RoutingRule.balancing_tag', index=1,
+      number=12, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='domain', full_name='v2ray.core.app.router.RoutingRule.domain', index=2,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='cidr', full_name='v2ray.core.app.router.RoutingRule.cidr', index=2,
+      name='cidr', full_name='v2ray.core.app.router.RoutingRule.cidr', index=3,
       number=3, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=_b('\030\001'), file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='geoip', full_name='v2ray.core.app.router.RoutingRule.geoip', index=4,
+      number=10, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='port_range', full_name='v2ray.core.app.router.RoutingRule.port_range', index=3,
+      name='port_range', full_name='v2ray.core.app.router.RoutingRule.port_range', index=5,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='network_list', full_name='v2ray.core.app.router.RoutingRule.network_list', index=4,
+      name='network_list', full_name='v2ray.core.app.router.RoutingRule.network_list', index=6,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=_b('\030\001'), file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='source_cidr', full_name='v2ray.core.app.router.RoutingRule.source_cidr', index=5,
-      number=6, type=11, cpp_type=10, label=3,
+      name='networks', full_name='v2ray.core.app.router.RoutingRule.networks', index=7,
+      number=13, type=14, cpp_type=8, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='user_email', full_name='v2ray.core.app.router.RoutingRule.user_email', index=6,
+      name='source_cidr', full_name='v2ray.core.app.router.RoutingRule.source_cidr', index=8,
+      number=6, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=_b('\030\001'), file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='source_geoip', full_name='v2ray.core.app.router.RoutingRule.source_geoip', index=9,
+      number=11, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='user_email', full_name='v2ray.core.app.router.RoutingRule.user_email', index=10,
       number=7, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='inbound_tag', full_name='v2ray.core.app.router.RoutingRule.inbound_tag', index=7,
+      name='inbound_tag', full_name='v2ray.core.app.router.RoutingRule.inbound_tag', index=11,
       number=8, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='protocol', full_name='v2ray.core.app.router.RoutingRule.protocol', index=8,
+      name='protocol', full_name='v2ray.core.app.router.RoutingRule.protocol', index=12,
       number=9, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -384,9 +466,50 @@ _ROUTINGRULE = _descriptor.Descriptor(
   syntax='proto3',
   extension_ranges=[],
   oneofs=[
+    _descriptor.OneofDescriptor(
+      name='target_tag', full_name='v2ray.core.app.router.RoutingRule.target_tag',
+      index=0, containing_type=None, fields=[]),
   ],
-  serialized_start=582,
-  serialized_end=919,
+  serialized_start=727,
+  serialized_end=1264,
+)
+
+
+_BALANCINGRULE = _descriptor.Descriptor(
+  name='BalancingRule',
+  full_name='v2ray.core.app.router.BalancingRule',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='tag', full_name='v2ray.core.app.router.BalancingRule.tag', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='outbound_selector', full_name='v2ray.core.app.router.BalancingRule.outbound_selector', index=1,
+      number=2, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1266,
+  serialized_end=1321,
 )
 
 
@@ -411,6 +534,13 @@ _CONFIG = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='balancing_rule', full_name='v2ray.core.app.router.Config.balancing_rule', index=2,
+      number=3, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -424,11 +554,19 @@ _CONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=922,
-  serialized_end=1124,
+  serialized_start=1324,
+  serialized_end=1588,
 )
 
+_DOMAIN_ATTRIBUTE.containing_type = _DOMAIN
+_DOMAIN_ATTRIBUTE.oneofs_by_name['typed_value'].fields.append(
+  _DOMAIN_ATTRIBUTE.fields_by_name['bool_value'])
+_DOMAIN_ATTRIBUTE.fields_by_name['bool_value'].containing_oneof = _DOMAIN_ATTRIBUTE.oneofs_by_name['typed_value']
+_DOMAIN_ATTRIBUTE.oneofs_by_name['typed_value'].fields.append(
+  _DOMAIN_ATTRIBUTE.fields_by_name['int_value'])
+_DOMAIN_ATTRIBUTE.fields_by_name['int_value'].containing_oneof = _DOMAIN_ATTRIBUTE.oneofs_by_name['typed_value']
 _DOMAIN.fields_by_name['type'].enum_type = _DOMAIN_TYPE
+_DOMAIN.fields_by_name['attribute'].message_type = _DOMAIN_ATTRIBUTE
 _DOMAIN_TYPE.containing_type = _DOMAIN
 _GEOIP.fields_by_name['cidr'].message_type = _CIDR
 _GEOIPLIST.fields_by_name['entry'].message_type = _GEOIP
@@ -436,11 +574,21 @@ _GEOSITE.fields_by_name['domain'].message_type = _DOMAIN
 _GEOSITELIST.fields_by_name['entry'].message_type = _GEOSITE
 _ROUTINGRULE.fields_by_name['domain'].message_type = _DOMAIN
 _ROUTINGRULE.fields_by_name['cidr'].message_type = _CIDR
+_ROUTINGRULE.fields_by_name['geoip'].message_type = _GEOIP
 _ROUTINGRULE.fields_by_name['port_range'].message_type = v2ray_dot_com_dot_core_dot_common_dot_net_dot_port__pb2._PORTRANGE
 _ROUTINGRULE.fields_by_name['network_list'].message_type = v2ray_dot_com_dot_core_dot_common_dot_net_dot_network__pb2._NETWORKLIST
+_ROUTINGRULE.fields_by_name['networks'].enum_type = v2ray_dot_com_dot_core_dot_common_dot_net_dot_network__pb2._NETWORK
 _ROUTINGRULE.fields_by_name['source_cidr'].message_type = _CIDR
+_ROUTINGRULE.fields_by_name['source_geoip'].message_type = _GEOIP
+_ROUTINGRULE.oneofs_by_name['target_tag'].fields.append(
+  _ROUTINGRULE.fields_by_name['tag'])
+_ROUTINGRULE.fields_by_name['tag'].containing_oneof = _ROUTINGRULE.oneofs_by_name['target_tag']
+_ROUTINGRULE.oneofs_by_name['target_tag'].fields.append(
+  _ROUTINGRULE.fields_by_name['balancing_tag'])
+_ROUTINGRULE.fields_by_name['balancing_tag'].containing_oneof = _ROUTINGRULE.oneofs_by_name['target_tag']
 _CONFIG.fields_by_name['domain_strategy'].enum_type = _CONFIG_DOMAINSTRATEGY
 _CONFIG.fields_by_name['rule'].message_type = _ROUTINGRULE
+_CONFIG.fields_by_name['balancing_rule'].message_type = _BALANCINGRULE
 _CONFIG_DOMAINSTRATEGY.containing_type = _CONFIG
 DESCRIPTOR.message_types_by_name['Domain'] = _DOMAIN
 DESCRIPTOR.message_types_by_name['CIDR'] = _CIDR
@@ -449,15 +597,24 @@ DESCRIPTOR.message_types_by_name['GeoIPList'] = _GEOIPLIST
 DESCRIPTOR.message_types_by_name['GeoSite'] = _GEOSITE
 DESCRIPTOR.message_types_by_name['GeoSiteList'] = _GEOSITELIST
 DESCRIPTOR.message_types_by_name['RoutingRule'] = _ROUTINGRULE
+DESCRIPTOR.message_types_by_name['BalancingRule'] = _BALANCINGRULE
 DESCRIPTOR.message_types_by_name['Config'] = _CONFIG
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Domain = _reflection.GeneratedProtocolMessageType('Domain', (_message.Message,), dict(
+
+  Attribute = _reflection.GeneratedProtocolMessageType('Attribute', (_message.Message,), dict(
+    DESCRIPTOR = _DOMAIN_ATTRIBUTE,
+    __module__ = 'v2ray.com.core.app.router.config_pb2'
+    # @@protoc_insertion_point(class_scope:v2ray.core.app.router.Domain.Attribute)
+    ))
+  ,
   DESCRIPTOR = _DOMAIN,
   __module__ = 'v2ray.com.core.app.router.config_pb2'
   # @@protoc_insertion_point(class_scope:v2ray.core.app.router.Domain)
   ))
 _sym_db.RegisterMessage(Domain)
+_sym_db.RegisterMessage(Domain.Attribute)
 
 CIDR = _reflection.GeneratedProtocolMessageType('CIDR', (_message.Message,), dict(
   DESCRIPTOR = _CIDR,
@@ -501,6 +658,13 @@ RoutingRule = _reflection.GeneratedProtocolMessageType('RoutingRule', (_message.
   ))
 _sym_db.RegisterMessage(RoutingRule)
 
+BalancingRule = _reflection.GeneratedProtocolMessageType('BalancingRule', (_message.Message,), dict(
+  DESCRIPTOR = _BALANCINGRULE,
+  __module__ = 'v2ray.com.core.app.router.config_pb2'
+  # @@protoc_insertion_point(class_scope:v2ray.core.app.router.BalancingRule)
+  ))
+_sym_db.RegisterMessage(BalancingRule)
+
 Config = _reflection.GeneratedProtocolMessageType('Config', (_message.Message,), dict(
   DESCRIPTOR = _CONFIG,
   __module__ = 'v2ray.com.core.app.router.config_pb2'
@@ -510,4 +674,7 @@ _sym_db.RegisterMessage(Config)
 
 
 DESCRIPTOR._options = None
+_ROUTINGRULE.fields_by_name['cidr']._options = None
+_ROUTINGRULE.fields_by_name['network_list']._options = None
+_ROUTINGRULE.fields_by_name['source_cidr']._options = None
 # @@protoc_insertion_point(module_scope)

@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import os
 import shutil
 import grpc_tools.protoc as proto
@@ -20,12 +18,16 @@ def fixDir():
             if i.endswith(".proto"):
                 return path
 
+
 def genProto():
     for (path, _, fileName) in os.walk("./"):
         for i in fileName:
             if i.endswith(".proto"):
-                p = path+"/"+i
-                proto.main("--proto_path=./ --python_out=./ --grpc_python_out=./ {}".format(p).split())
+                p = path + "/" + i
+                proto.main(
+                    "--proto_path=./ --python_out=./ --grpc_python_out=./ {}".format(
+                        p).split())
+
 
 path = fixDir()
 if not pathlib.Path("core").exists():
