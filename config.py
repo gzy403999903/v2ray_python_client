@@ -1,0 +1,17 @@
+UNKNOWN = 0
+AES_128_CFB = 1
+AES_256_CFB = 2
+CHACHA20 = 3
+CHACHA20_IETF = 4
+AES_128_GCM = 5
+AES_256_GCM = 6
+CHACHA20_POLY1305 = 7
+NONE = 8
+Auto = 0
+Disabled = 1
+Enabled = 2
+
+
+RawTCP = 1
+TCP = 2
+UDP = 3
