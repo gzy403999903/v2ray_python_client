@@ -17,9 +17,26 @@ from v2ray.com.core.app.proxyman.command import command_pb2_grpc
 from v2ray.com.core.app.stats.command import command_pb2 as stats_command_pb2
 from v2ray.com.core.app.stats.command import command_pb2_grpc as stats_command_pb2_grpc
 from v2ray.com.core.proxy.shadowsocks import config_pb2 as shadowsocks_server_config_pb2
+from v2ray.com.core.transport.internet.headers.wechat import config_pb2 as header_wechat_config_pb2
+from v2ray.com.core.transport.internet.headers.srtp import config_pb2 as header_srtp_config_pb2
+from v2ray.com.core.transport.internet.headers.utp import config_pb2 as header_utp_config_pb2
+from v2ray.com.core.transport.internet.headers.wireguard import config_pb2 as header_wiregurad_config_pb2
+from v2ray.com.core.transport.internet.kcp import config_pb2 as kcp_config_pb2
+from v2ray.com.core.transport.internet.headers.tls import config_pb2 as header_tls_config_pb2
+from v2ray.com.core.transport.internet.headers.noop import config_pb2 as header_noop_config_pb2
+
+import v2ray.com.core.transport.internet.config_pb2 as internet_config_pb2
+import v2ray.com.core.transport.internet as internet
+
+
+from v2ray.com.core.transport.internet.websocket import config_pb2 as websocket_config_pb2
 import uuid
 import grpc
-
+kcp_headers_config = {"wechat-video":header_wechat_config_pb2.VideoConfig(),"srtp":header_srtp_config_pb2.Config(),
+                      'utp':header_utp_config_pb2.Config(),
+               'wireguard':header_wiregurad_config_pb2.WireguardConfig(),
+                      'dtls':header_tls_config_pb2.PacketConfig(),
+                      "noop":header_noop_config_pb2.Config()}
 
 def to_typed_message(message):
     return typed_message_pb2.TypedMessage(
@@ -37,7 +54,6 @@ class Proxy(object):
 
     def __init__(self):
         self.message = None
-
 
 class VMessInbound(Proxy):
     """VMess传入连接配置"""
@@ -87,6 +103,65 @@ class SSInbound(Proxy):
             )
         )
 
+class StreamSetting(object):
+    "Stream Setting"
+    def __init__(self):
+        self.streamconfig =None
+
+
+class Websocket(StreamSetting):
+    def __init__(self,path="/"):
+        super(Websocket,self).__init__()
+        self.streamconfig = internet_config_pb2.StreamConfig(
+            protocol = internet_config_pb2.WebSocket,
+            transport_settings = [
+                internet_config_pb2.TransportConfig(
+                    protocol = internet_config_pb2.WebSocket,
+                    settings = to_typed_message(
+                        websocket_config_pb2.Config(
+                            path = path,
+                            header = [
+                                websocket_config_pb2.Header(
+                                    key = "Hosts",
+                                    value = "v2ray.com"
+                                )
+                            ]
+                        )
+                    )
+
+
+                )
+            ]
+        )
+class Kcp(StreamSetting):
+
+
+    def __init__(self,header_key =None,readbuffer_size=4096,writebuffer=4096,uplinkcapacity=20,downlinkcapacity=20):
+        """
+        :param users: 包含'email','level','user_id','alter_id'字段的字典
+        """
+        header = kcp_headers_config['noop']
+        if header_key in kcp_headers_config:
+            header = kcp_headers_config[header_key]
+        super(Kcp, self).__init__()
+        self.streamconfig = internet_config_pb2.StreamConfig(
+                    protocol =internet_config_pb2.MKCP,
+            transport_settings = [
+                internet_config_pb2.TransportConfig(
+                        protocol=internet_config_pb2.MKCP,
+                    settings=to_typed_message(
+                        kcp_config_pb2.Config(
+                            header_config=to_typed_message(
+                                header
+                            )
+                        )
+
+                    )
+            )
+
+            ]
+
+        )
 
 class Client(object):
     def __init__(self, address, port):
@@ -181,7 +256,7 @@ class Client(object):
             else:
                 raise V2RayError(details)
 
-    def add_inbound(self, tag, address, port, proxy: Proxy):
+    def add_inbound(self, tag, address, port, proxy: Proxy,streamsetting: StreamSetting =None):
         """
         增加传入连接
         :param tag: 此传入连接的标识
@@ -204,7 +279,7 @@ class Client(object):
                                 ip=ip2bytes(address),  # 4字节或16字节
                             ),
                             allocation_strategy=None,
-                            stream_settings=None,
+                            stream_settings=streamsetting.streamconfig,
                             receive_original_destination=None,
                             domain_override=None,
                             sniffing_settings=None
@@ -236,41 +311,43 @@ class Client(object):
 
 
 if __name__ == '__main__':
-    INBOUND_TAG = 'master_server'
+    INBOUND_TAG = 'master_server_123'
     SERVER_ADDRESS = 'xxxx'
     SERVER_PORT = '2333'
     client = Client(address=SERVER_ADDRESS, port=SERVER_PORT)
     l = []
-    # for i in range(5):
-    #     uid = uuid.uuid4().hex
-    #     email = str(i) + 'tyf@email.com'
-    #     # client.add_user(inbound_tag=INBOUND_TAG,user_id=uid,email=email,level=0,alter_id=16)
-    #
-    #     # client.remove_user(inbound_tag=INBOUND_TAG,email=email)
-    #
-    #     print(client.get_user_traffic_downlink(email=email))
-    #
-    #     data = {}
-    #     data['user_id'] = uid
-    #     data['email'] = email
-    #     data['level'] = 0
-    #     data['alter_id'] = 32
-    #     l.append(data)
-    # vmess_inbound = VMessInbound(l)
-    # client.add_inbound(tag="rico",address="0.0.0.0",port=1234,proxy=vmess_inbound)
-
-    for i in range(1):
+    for i in range(5):
         uid = uuid.uuid4().hex
         email = str(i) + 'tyf@email.com'
-        password = "rico93.win"
-        cipher_type = AES_256_CFB
+        # client.add_user(inbound_tag=INBOUND_TAG,user_id=uid,email=email,level=0,alter_id=16)
+
+        # client.remove_user(inbound_tag=INBOUND_TAG,email=email)
+
+        print(client.get_user_traffic_downlink(email=email))
+
         data = {}
-        data['email'] = email
-        data['password'] = password
         data['user_id'] = uid
-        data['cipher_type'] = cipher_type
-        ss = SSInbound(data)
-        #client.add_inbound(tag="SS_"+data['email'],address="0.0.0.0",port=1234,proxy=ss)
-        client.remove_inbound(tag="SS_"+data['email'])
-        print(ss)
+        data['email'] = email
+        data['level'] = 0
+        data['alter_id'] = 32
+        l.append(data)
+    vmess_inbound = VMessInbound(l)
+    client.remove_inbound(tag='rico11')
+    client.add_inbound(tag="rico11",address="0.0.0.0",port=12344,proxy=vmess_inbound,streamsetting=Kcp(header_key="wireguard"))
+    print(l)
+    # for i in range(1):
+    #     uid = uuid.uuid4().hex
+    #     email = str(i) + 'tyf@email.com'
+    #     password = "rico93.win"
+    #     cipher_type = AES_256_CFB
+    #     data = {}
+    #     data['email'] = email
+    #     data['password'] = password
+    #     data['user_id'] = uid
+    #     data['cipher_type'] = cipher_type
+    #     ss = SSInbound(data)
+    #     #client.remove_inbound(tag="SS_"+data['email'])
+    #     client.add_inbound(tag="SS_"+data['email'],address="0.0.0.0",port=1234,proxy=ss)
+    #
+    #     print(ss)
 
